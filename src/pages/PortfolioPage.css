@@ -1,0 +1,118 @@
+.portfolio-page {
+	padding: var(--spacing-20) 0;
+	min-height: 100vh;
+}
+
+.portfolio-page .container {
+	max-width: var(--container-max-width);
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+}
+
+.portfolio-page__header {
+	text-align: center;
+	margin-bottom: var(--spacing-16);
+}
+
+.portfolio-page__header h1 {
+	font-size: var(--font-size-4xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-4);
+}
+
+.portfolio-page__header p {
+	font-size: var(--font-size-lg);
+	color: var(--color-text-secondary);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.portfolio-page__content {
+	display: grid;
+	grid-template-columns: 280px 1fr;
+	gap: var(--spacing-8);
+	align-items: start;
+	min-height: 100vh;
+}
+
+.portfolio-page__sidebar {
+	position: sticky;
+	top: calc(var(--header-height) + var(--spacing-4));
+	height: fit-content;
+	max-height: calc(100vh - var(--header-height) - var(--spacing-8));
+	overflow-y: auto;
+}
+
+.portfolio-page__main {
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-page__active-filters {
+	margin-bottom: var(--spacing-6);
+	padding: var(--spacing-4);
+	background: var(--color-gray-50);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+	min-height: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.portfolio-page__active-filters h3 {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	color: var(--color-text-secondary);
+	margin-bottom: var(--spacing-3);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.portfolio-page__filter-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--spacing-2);
+}
+
+.portfolio-page__results-header {
+	margin-bottom: var(--spacing-6);
+	padding-bottom: var(--spacing-4);
+	border-bottom: 1px solid var(--color-gray-200);
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.portfolio-page__results-header h2 {
+	font-size: var(--font-size-xl);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-primary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.portfolio-page__content {
+		grid-template-columns: 1fr;
+		gap: var(--spacing-6);
+	}
+
+	.portfolio-page__sidebar {
+		position: static;
+		order: 2;
+	}
+
+	.portfolio-page__main {
+		order: 1;
+	}
+
+	.portfolio-page__header h1 {
+		font-size: var(--font-size-3xl);
+	}
+
+	.portfolio-page__header p {
+		font-size: var(--font-size-base);
+	}
+}

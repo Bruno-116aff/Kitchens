@@ -1,0 +1,12 @@
+<!-- This would be a real image file, but for now we'll use a placeholder -->
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#f3f4f6"/>
+  <rect x="100" y="200" width="600" height="200" fill="#e5e7eb" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="150" y="250" width="80" height="120" fill="#9ca3af"/>
+  <rect x="250" y="250" width="80" height="120" fill="#6b7280"/>
+  <rect x="350" y="250" width="80" height="120" fill="#4b5563"/>
+  <rect x="450" y="250" width="80" height="120" fill="#374151"/>
+  <rect x="550" y="250" width="80" height="120" fill="#1f2937"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial" font-size="24" fill="#374151">Modern Kitchen Design</text>
+</svg>
+

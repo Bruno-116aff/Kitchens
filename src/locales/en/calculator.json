@@ -1,0 +1,93 @@
+{
+	"calculator": {
+		"title": "Kitchen Price Calculator",
+		"subtitle": "Get an instant estimate for your dream kitchen",
+		"steps": {
+			"kitchenType": {
+				"title": "What type of kitchen do you need?",
+				"options": {
+					"modular": "Modular Kitchen",
+					"custom": "Custom Kitchen",
+					"premium": "Premium Kitchen",
+					"individual": "Individual Project"
+				}
+			},
+			"layout": {
+				"title": "Choose your kitchen layout",
+				"options": {
+					"linear": "Linear",
+					"corner": "Corner",
+					"uShape": "U-Shaped",
+					"island": "Island",
+					"twoRow": "Two-Row"
+				}
+			},
+			"dimensions": {
+				"title": "Enter your kitchen dimensions",
+				"width": "Width (m)",
+				"height": "Height (m)",
+				"depth": "Depth (m)"
+			},
+			"style": {
+				"title": "What style do you prefer?",
+				"options": {
+					"modern": "Modern",
+					"classic": "Classic",
+					"scandinavian": "Scandinavian",
+					"loft": "Loft",
+					"minimalist": "Minimalist",
+					"provence": "Provence"
+				}
+			},
+			"countertop": {
+				"title": "Choose your countertop material",
+				"options": {
+					"laminate": "Laminate",
+					"acrylic": "Acrylic",
+					"quartz": "Quartz",
+					"stone": "Natural Stone",
+					"wood": "Wood"
+				}
+			},
+			"appliances": {
+				"title": "What appliances do you need?",
+				"options": {
+					"basic": "Basic",
+					"medium": "Medium Class",
+					"premium": "Premium",
+					"none": "No Appliances"
+				}
+			},
+			"budget": {
+				"title": "What's your budget range?",
+				"options": {
+					"under5k": "Under €5,000",
+					"5k10k": "€5,000 - €10,000",
+					"10k20k": "€10,000 - €20,000",
+					"20k30k": "€20,000 - €30,000",
+					"over30k": "Over €30,000"
+				}
+			}
+		},
+		"contact": {
+			"title": "Almost done! Leave your contact details",
+			"name": "Your Name",
+			"email": "Email Address",
+			"phone": "Phone Number",
+			"message": "Additional Comments (Optional)"
+		},
+		"result": {
+			"title": "Your Kitchen Estimate",
+			"priceRange": "Estimated Price Range",
+			"presets": "Recommended Packages",
+			"cta": "Get Free Quote",
+			"book": "Book Consultation"
+		},
+		"buttons": {
+			"next": "Next",
+			"previous": "Previous",
+			"restart": "Start Over",
+			"submit": "Get Quote"
+		}
+	}
+}

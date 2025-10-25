@@ -1,0 +1,115 @@
+/* ContactForm component styles */
+
+.contact-form {
+	background-color: var(--color-white);
+	border-radius: var(--radius-xl);
+	box-shadow: var(--shadow-lg);
+	padding: var(--spacing-8);
+	max-width: 600px;
+	width: 100%;
+}
+
+.contact-form__header {
+	text-align: center;
+	margin-bottom: var(--spacing-8);
+}
+
+.contact-form__header h3 {
+	font-size: var(--font-size-2xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-gray-900);
+	margin-bottom: var(--spacing-3);
+}
+
+.contact-form__header p {
+	color: var(--color-gray-600);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-relaxed);
+}
+
+.contact-form__fields {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-6);
+	margin-bottom: var(--spacing-8);
+}
+
+.contact-form__checkbox {
+	margin-top: var(--spacing-2);
+}
+
+.checkbox-label {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-3);
+	cursor: pointer;
+	font-size: var(--font-size-sm);
+	line-height: var(--line-height-relaxed);
+	color: var(--color-gray-700);
+}
+
+.checkbox-input {
+	width: 18px;
+	height: 18px;
+	margin-top: 2px;
+	cursor: pointer;
+	accent-color: var(--color-primary);
+}
+
+.checkbox-input:focus {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+.checkbox-text {
+	flex: 1;
+}
+
+.checkbox-error {
+	margin-top: var(--spacing-2);
+	font-size: var(--font-size-sm);
+	color: var(--color-error);
+	line-height: 1.4;
+}
+
+.contact-form__footer {
+	text-align: center;
+}
+
+.contact-form__submit {
+	width: 100%;
+	max-width: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.contact-form {
+		padding: var(--spacing-6);
+		margin: 0 var(--spacing-4);
+	}
+
+	.contact-form__header h3 {
+		font-size: var(--font-size-xl);
+	}
+
+	.contact-form__fields {
+		gap: var(--spacing-4);
+		margin-bottom: var(--spacing-6);
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-form {
+		padding: var(--spacing-4);
+		margin: 0 var(--spacing-2);
+	}
+
+	.contact-form__header {
+		margin-bottom: var(--spacing-6);
+	}
+
+	.contact-form__fields {
+		gap: var(--spacing-3);
+	}
+}
+

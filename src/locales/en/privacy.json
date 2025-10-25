@@ -1,0 +1,127 @@
+{
+	"hero": {
+		"title": "Privacy Policy",
+		"subtitle": "How We Protect Your Information",
+		"lastUpdated": "Last updated: January 2024"
+	},
+	"introduction": {
+		"title": "Introduction",
+		"content": "Custom Kitchens Cyprus respects your privacy and is committed to protecting your personal information. This privacy policy explains how we collect, use, and safeguard your data when you use our services."
+	},
+	"informationCollection": {
+		"title": "Information We Collect",
+		"personalData": {
+			"title": "Personal Information",
+			"content": "We collect personal information that you provide directly to us, including:",
+			"items": [
+				"Name and contact information (email, phone, address)",
+				"Project details and preferences",
+				"Payment information for transactions",
+				"Communication preferences",
+				"Any other information you choose to provide"
+			]
+		},
+		"automaticData": {
+			"title": "Automatically Collected Information",
+			"content": "We automatically collect certain information when you visit our website:",
+			"items": [
+				"IP address and browser information",
+				"Pages visited and time spent on site",
+				"Device and operating system details",
+				"Cookies and similar tracking technologies"
+			]
+		}
+	},
+	"useOfInformation": {
+		"title": "How We Use Your Information",
+		"content": "We use your information for the following purposes:",
+		"items": [
+			"Providing and improving our services",
+			"Processing orders and payments",
+			"Communicating about your project",
+			"Sending marketing communications (with consent)",
+			"Analyzing website usage and performance",
+			"Complying with legal obligations"
+		]
+	},
+	"informationSharing": {
+		"title": "Information Sharing",
+		"content": "We do not sell your personal information. We may share your information in the following circumstances:",
+		"thirdParties": {
+			"title": "Third-Party Service Providers",
+			"content": "We may share information with trusted service providers who assist us in:",
+			"items": [
+				"Payment processing and financial services",
+				"Website hosting and maintenance",
+				"Marketing and analytics services"
+			]
+		}
+	},
+	"dataSecurity": {
+		"title": "Data Security",
+		"content": "We implement appropriate security measures to protect your personal information:",
+		"items": [
+			"Encryption of sensitive data",
+			"Secure servers and databases",
+			"Regular security assessments",
+			"Access controls and monitoring"
+		]
+	},
+	"cookies": {
+		"title": "Cookies and Tracking",
+		"content": "We use cookies and similar technologies to enhance your experience on our website.",
+		"types": {
+			"title": "Types of Cookies",
+			"items": [
+				"Essential cookies for website functionality",
+				"Analytics cookies to understand usage",
+				"Marketing cookies for personalized content"
+			]
+		},
+		"management": "You can control cookie settings through your browser preferences."
+	},
+	"yourRights": {
+		"title": "Your Rights",
+		"content": "You have the following rights regarding your personal information:",
+		"items": [
+			"Access to your personal data",
+			"Correction of inaccurate information",
+			"Deletion of your data",
+			"Objection to processing",
+			"Data portability"
+		]
+	},
+	"dataRetention": {
+		"title": "Data Retention",
+		"content": "We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy or as required by law."
+	},
+	"childrensPrivacy": {
+		"title": "Children's Privacy",
+		"content": "Our services are not directed to children under 16. We do not knowingly collect personal information from children."
+	},
+	"changesToPolicy": {
+		"title": "Changes to This Policy",
+		"content": "We may update this privacy policy from time to time. We will notify you of any significant changes by posting the new policy on our website."
+	},
+	"contactInformation": {
+		"title": "Contact Us",
+		"content": "If you have questions about this privacy policy or our data practices, please contact us:",
+		"email": "Email: privacy@customkitchenscyprus.com",
+		"phone": "Phone: +357 25 123456",
+		"address": "Address: 123 Kitchen Street, Nicosia, Cyprus"
+	},
+	"navigation": {
+		"title": "Quick Navigation",
+		"introduction": "Introduction",
+		"informationCollection": "Information Collection",
+		"useOfInformation": "Use of Information",
+		"informationSharing": "Information Sharing",
+		"dataSecurity": "Data Security",
+		"cookies": "Cookies",
+		"yourRights": "Your Rights",
+		"dataRetention": "Data Retention",
+		"childrensPrivacy": "Children's Privacy",
+		"changesToPolicy": "Changes to Policy",
+		"contactInformation": "Contact Information"
+	}
+}

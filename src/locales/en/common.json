@@ -1,0 +1,55 @@
+{
+	"buttons": {
+		"getQuote": "Get Free Quote",
+		"calculatePrice": "Calculate Price",
+		"bookConsultation": "Book Free Consultation",
+		"getFreeDesign": "Get Free 3D Design",
+		"contactUs": "Contact Us",
+		"learnMore": "Learn More",
+		"viewProject": "View Project",
+		"submit": "Submit",
+		"cancel": "Cancel",
+		"next": "Next",
+		"previous": "Previous",
+		"close": "Close"
+	},
+	"navigation": {
+		"home": "Home",
+		"services": "Services",
+		"about": "About Us",
+		"portfolio": "Portfolio",
+		"process": "Process",
+		"faq": "FAQ",
+		"contact": "Contact"
+	},
+	"forms": {
+		"name": "Name",
+		"email": "Email",
+		"phone": "Phone",
+		"message": "Message",
+		"serviceType": "Service Type",
+		"agreePrivacy": "I agree to the Privacy Policy",
+		"required": "This field is required",
+		"invalidEmail": "Please enter a valid email",
+		"invalidPhone": "Please enter a valid phone number",
+		"minLength": "Minimum {count} characters required",
+		"maxLength": "Maximum {count} characters allowed"
+	},
+	"serviceTypes": {
+		"kitchenDesign": "Kitchen Design",
+		"fullInstallation": "Full Installation",
+		"consultation": "Consultation",
+		"other": "Other"
+	},
+	"common": {
+		"loading": "Loading...",
+		"error": "Error",
+		"success": "Success",
+		"readMore": "Read More",
+		"showLess": "Show Less",
+		"seeAll": "See All",
+		"back": "Back",
+		"language": "Language"
+	}
+}
+

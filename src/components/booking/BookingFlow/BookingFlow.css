@@ -1,0 +1,21 @@
+.booking-flow {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: var(--spacing-6);
+}
+
+.booking-flow__content {
+	min-height: 400px;
+	position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.booking-flow {
+		padding: var(--spacing-4);
+	}
+
+	.booking-flow__content {
+		min-height: 300px;
+	}
+}

@@ -1,0 +1,125 @@
+{
+	"hero": {
+		"title": "About Custom Kitchens Cyprus",
+		"subtitle": "Your Trusted Partner in Kitchen Design",
+		"description": "For over 15 years, we've been creating beautiful, functional kitchens that transform homes across Cyprus. Our team of expert designers and craftsmen work together to bring your dream kitchen to life.",
+		"imageAlt": "Custom Kitchens Cyprus company building"
+	},
+	"story": {
+		"title": "Our Story",
+		"founded": {
+			"title": "Company Founded",
+			"description": "Started as a small family business with a passion for quality craftsmanship and innovative design."
+		},
+		"expansion": {
+			"title": "Rapid Growth",
+			"description": "Expanded our team and opened our first showroom, establishing ourselves as Cyprus' premier kitchen specialists."
+		},
+		"digital": {
+			"title": "Digital Innovation",
+			"description": "Launched our online platform with 3D planning tools and virtual consultations to serve customers better."
+		},
+		"today": {
+			"title": "Today",
+			"description": "Leading kitchen design company with 500+ completed projects and a reputation for excellence across Cyprus."
+		},
+		"imageAlt": "Our showroom interior"
+	},
+	"achievements": {
+		"title": "Our Achievements",
+		"projects": "Projects Completed",
+		"projectsDesc": "Successfully delivered kitchen projects across Cyprus",
+		"years": "Years Experience",
+		"yearsDesc": "Over a decade of expertise in kitchen design",
+		"satisfaction": "Customer Satisfaction",
+		"satisfactionDesc": "Clients who recommend us to friends and family",
+		"support": "Support",
+		"supportDesc": "Round-the-clock customer service and support"
+	},
+	"values": {
+		"title": "Our Values",
+		"quality": {
+			"title": "Quality First",
+			"description": "We use only the finest materials and employ skilled craftsmen to ensure every kitchen meets our high standards."
+		},
+		"trust": {
+			"title": "Trust & Transparency",
+			"description": "Clear communication, honest pricing, and reliable timelines - we build lasting relationships with our clients."
+		},
+		"innovation": {
+			"title": "Innovation",
+			"description": "We stay ahead of trends and embrace new technologies to offer cutting-edge kitchen solutions."
+		},
+		"excellence": {
+			"title": "Excellence",
+			"description": "Every project is an opportunity to exceed expectations and deliver exceptional results."
+		}
+	},
+	"team": {
+		"title": "Meet Our Team",
+		"subtitle": "Our experienced professionals are dedicated to bringing your vision to life",
+		"designer1": {
+			"name": "Maria Papadopoulos",
+			"position": "Lead Kitchen Designer",
+			"experience": "12 years experience",
+			"specialization": "Specializes in modern and minimalist kitchen designs with focus on functionality and aesthetics."
+		},
+		"designer2": {
+			"name": "Andreas Christou",
+			"position": "Senior Interior Designer",
+			"experience": "8 years experience",
+			"specialization": "Expert in classical and traditional kitchen styles, known for attention to detail and craftsmanship."
+		},
+		"manager1": {
+			"name": "Elena Stavrou",
+			"position": "Project Manager",
+			"experience": "10 years experience",
+			"specialization": "Ensures smooth project execution from design to installation, coordinating all aspects of kitchen delivery."
+		},
+		"installer1": {
+			"name": "Costas Ioannou",
+			"position": "Master Installer",
+			"experience": "15 years experience",
+			"specialization": "Expert craftsman specializing in precision installation and custom modifications for perfect fit."
+		}
+	},
+	"workshop": {
+		"title": "Our Workshop",
+		"description": "Our state-of-the-art workshop is equipped with the latest machinery and tools, allowing us to create custom kitchen components with precision and efficiency.",
+		"production": {
+			"title": "Custom Production",
+			"description": "We manufacture custom cabinets, doors, and components tailored to your specific requirements and space."
+		},
+		"equipment": {
+			"title": "Modern Equipment",
+			"description": "CNC machines, precision cutting tools, and professional finishing equipment ensure perfect results every time."
+		},
+		"quality": {
+			"title": "Quality Control",
+			"description": "Every component undergoes rigorous quality checks before leaving our workshop to ensure durability and perfection."
+		},
+		"imageAlt": "Our modern workshop with professional equipment"
+	},
+	"awards": {
+		"title": "Awards & Recognition",
+		"subtitle": "Our commitment to excellence has been recognized by industry leaders",
+		"excellence": {
+			"title": "Excellence in Design",
+			"description": "Awarded by Cyprus Interior Design Association for outstanding kitchen design innovation."
+		},
+		"innovation": {
+			"title": "Innovation Award",
+			"description": "Recognized for pioneering 3D kitchen planning technology and virtual consultation services."
+		},
+		"customer": {
+			"title": "Customer Choice",
+			"description": "Voted Best Kitchen Company by Cyprus Home & Garden Magazine readers for three consecutive years."
+		}
+	},
+	"cta": {
+		"title": "Ready to Start Your Dream Kitchen?",
+		"description": "Let our expert team help you create the perfect kitchen for your home. Contact us today for a free consultation.",
+		"contact": "Get Free Consultation",
+		"calculator": "Price Calculator"
+	}
+}

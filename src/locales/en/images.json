@@ -1,0 +1,151 @@
+{
+	"images": {
+		"alt": {
+			"logo": "Custom Kitchens Logo",
+			"hero": "Modern Kitchen Design",
+			"heroBackground": "Kitchen Design Background",
+			"portfolio": {
+				"kitchen1": "Modern Linear Kitchen Design",
+				"kitchen2": "Classic L-Shaped Kitchen",
+				"kitchen3": "Scandinavian U-Shaped Kitchen",
+				"kitchen4": "Industrial Island Kitchen",
+				"kitchen5": "Minimalist Two-Row Kitchen",
+				"kitchen6": "Provence Style Kitchen",
+				"kitchen7": "Modern U-Shaped Kitchen",
+				"kitchen8": "Classic Island Kitchen",
+				"kitchen9": "Contemporary Linear Kitchen",
+				"kitchen10": "Traditional Corner Kitchen",
+				"kitchen11": "Modern Island Kitchen",
+				"kitchen12": "Scandinavian Linear Kitchen"
+			},
+			"services": {
+				"modular": "Modular Kitchen Design",
+				"custom": "Custom Kitchen Design",
+				"premium": "Premium Kitchen Design",
+				"linear": "Linear Kitchen Layout",
+				"corner": "Corner Kitchen Layout",
+				"uShape": "U-Shaped Kitchen Layout",
+				"island": "Island Kitchen Layout"
+			},
+			"materials": {
+				"facades": {
+					"mdf": "MDF Kitchen Facades",
+					"wood": "Wood Kitchen Facades",
+					"glass": "Glass Kitchen Facades",
+					"metal": "Metal Kitchen Facades"
+				},
+				"countertops": {
+					"laminate": "Laminate Countertop",
+					"acrylic": "Acrylic Countertop",
+					"quartz": "Quartz Countertop",
+					"stone": "Natural Stone Countertop",
+					"wood": "Wood Countertop"
+				},
+				"hardware": {
+					"handles": "Kitchen Cabinet Handles",
+					"hinges": "Kitchen Cabinet Hinges",
+					"drawers": "Kitchen Drawer Systems"
+				}
+			},
+			"team": {
+				"designer1": "Kitchen Designer",
+				"designer2": "Interior Designer",
+				"manager1": "Project Manager",
+				"installer1": "Kitchen Installer"
+			},
+			"process": {
+				"consultation": "Kitchen Design Consultation",
+				"measurement": "Kitchen Measurement",
+				"design": "Kitchen Design Process",
+				"production": "Kitchen Production",
+				"delivery": "Kitchen Delivery",
+				"installation": "Kitchen Installation"
+			},
+			"quiz": {
+				"kitchenTypes": {
+					"modular": "Modular Kitchen Type",
+					"custom": "Custom Kitchen Type",
+					"premium": "Premium Kitchen Type",
+					"individual": "Individual Kitchen Project"
+				},
+				"layouts": {
+					"linear": "Linear Kitchen Layout",
+					"corner": "Corner Kitchen Layout",
+					"uShape": "U-Shaped Kitchen Layout",
+					"island": "Island Kitchen Layout",
+					"twoRow": "Two-Row Kitchen Layout"
+				},
+				"styles": {
+					"modern": "Modern Kitchen Style",
+					"classic": "Classic Kitchen Style",
+					"scandinavian": "Scandinavian Kitchen Style",
+					"loft": "Loft Kitchen Style",
+					"minimalist": "Minimalist Kitchen Style",
+					"provence": "Provence Kitchen Style"
+				},
+				"presets": {
+					"economy": "Economy Kitchen Package",
+					"optimal": "Optimal Kitchen Package",
+					"premium": "Premium Kitchen Package"
+				}
+			},
+			"planner": {
+				"modules": {
+					"baseCabinet": "Base Kitchen Cabinet",
+					"wallCabinet": "Wall Kitchen Cabinet",
+					"cornerCabinet": "Corner Kitchen Cabinet",
+					"drawer": "Kitchen Drawer",
+					"shelf": "Kitchen Shelf"
+				},
+				"appliances": {
+					"refrigerator": "Kitchen Refrigerator",
+					"stove": "Kitchen Stove",
+					"dishwasher": "Kitchen Dishwasher",
+					"microwave": "Kitchen Microwave",
+					"oven": "Kitchen Oven"
+				}
+			},
+			"finance": {
+				"installment": "Kitchen Installment Plan",
+				"banking": "Banking Partnership",
+				"calculator": "Finance Calculator"
+			},
+			"about": {
+				"company": "Custom Kitchens Company",
+				"showroom": "Kitchen Showroom",
+				"workshop": "Kitchen Workshop",
+				"awards": "Company Awards"
+			},
+			"contact": {
+				"office": "Company Office",
+				"showroom": "Kitchen Showroom",
+				"map": "Location Map"
+			},
+			"icons": {
+				"phone": "Phone Icon",
+				"email": "Email Icon",
+				"location": "Location Icon",
+				"clock": "Clock Icon",
+				"star": "Star Icon",
+				"check": "Check Icon",
+				"arrow": "Arrow Icon",
+				"calculator": "Calculator Icon",
+				"planner": "Planner Icon",
+				"booking": "Booking Icon",
+				"finance": "Finance Icon"
+			},
+			"social": {
+				"facebook": "Facebook",
+				"instagram": "Instagram",
+				"whatsapp": "WhatsApp",
+				"telegram": "Telegram"
+			},
+			"placeholders": {
+				"kitchen": "Kitchen Image Placeholder",
+				"team": "Team Member Placeholder",
+				"service": "Service Placeholder",
+				"project": "Project Placeholder"
+			}
+		}
+	}
+}

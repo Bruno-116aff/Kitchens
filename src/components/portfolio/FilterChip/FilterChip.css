@@ -1,0 +1,38 @@
+.filter-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-2);
+	background: var(--color-primary);
+	color: var(--color-white);
+	padding: var(--spacing-1) var(--spacing-3);
+	border-radius: var(--border-radius-full);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+}
+
+.filter-chip__label {
+	flex: 1;
+}
+
+.filter-chip__remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	background: none;
+	border: none;
+	color: var(--color-white);
+	cursor: pointer;
+	border-radius: 50%;
+	transition: background-color var(--transition-base);
+}
+
+.filter-chip__remove:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.filter-chip__remove svg {
+	width: 10px;
+	height: 10px;
+}

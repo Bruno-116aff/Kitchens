@@ -1,0 +1,66 @@
+/* Import design system variables and base styles */
+@import './styles/variables.css';
+@import './styles/base.css';
+
+/* Reset and normalize */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Optimize rendering performance */
+* {
+	will-change: auto;
+}
+
+/* Prevent layout shifts */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-gray-300);
+	border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-gray-400);
+}
+
+/* Selection styles */
+::selection {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+}

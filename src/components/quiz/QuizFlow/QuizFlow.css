@@ -1,0 +1,21 @@
+.quiz-flow {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: var(--spacing-6);
+}
+
+.quiz-flow__content {
+	min-height: 400px;
+	position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.quiz-flow {
+		padding: var(--spacing-4);
+	}
+
+	.quiz-flow__content {
+		min-height: 300px;
+	}
+}

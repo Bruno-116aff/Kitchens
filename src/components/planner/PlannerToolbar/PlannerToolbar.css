@@ -1,0 +1,110 @@
+.planner-toolbar {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-6);
+	padding: var(--spacing-6);
+	background: var(--color-white);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+	height: fit-content;
+	min-width: 200px;
+}
+
+.planner-toolbar__section h3 {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-3);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.planner-toolbar__buttons {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-2);
+}
+
+.planner-toolbar__btn {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-2);
+	padding: var(--spacing-3);
+	background: var(--color-gray-50);
+	border: 1px solid var(--color-gray-200);
+	border-radius: var(--border-radius-md);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	color: var(--color-text-primary);
+	cursor: pointer;
+	transition: all var(--transition-fast);
+	text-align: left;
+	width: 100%;
+}
+
+.planner-toolbar__btn:hover:not(:disabled) {
+	background: var(--color-primary);
+	color: var(--color-white);
+	border-color: var(--color-primary);
+	transform: translateY(-1px);
+}
+
+.planner-toolbar__btn:active:not(:disabled) {
+	transform: translateY(0);
+}
+
+.planner-toolbar__btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.planner-toolbar__btn--file {
+	cursor: pointer;
+}
+
+.planner-toolbar__project-info {
+	font-size: var(--font-size-xs);
+	color: var(--color-text-secondary);
+}
+
+.planner-toolbar__project-info p {
+	margin-bottom: var(--spacing-1);
+}
+
+.planner-toolbar__project-info strong {
+	color: var(--color-text-primary);
+}
+
+.planner-toolbar__no-project {
+	font-size: var(--font-size-xs);
+	color: var(--color-text-tertiary);
+	font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.planner-toolbar {
+		flex-direction: row;
+		overflow-x: auto;
+		gap: var(--spacing-4);
+		padding: var(--spacing-4);
+		min-width: auto;
+	}
+
+	.planner-toolbar__section {
+		min-width: 150px;
+	}
+
+	.planner-toolbar__buttons {
+		flex-direction: row;
+		overflow-x: auto;
+		gap: var(--spacing-2);
+	}
+
+	.planner-toolbar__btn {
+		min-width: 80px;
+		justify-content: center;
+		font-size: var(--font-size-xs);
+		padding: var(--spacing-2);
+	}
+}

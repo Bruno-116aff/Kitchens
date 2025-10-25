@@ -1,0 +1,58 @@
+/* PageLayout component styles */
+
+.page-layout {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-layout__main {
+	flex: 1;
+	padding-top: var(--header-height);
+	will-change: contents;
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+/* Ensure proper spacing for fixed header */
+.page-layout__main > *:first-child {
+	margin-top: 0;
+}
+
+/* Page sections spacing */
+.page-layout__main section:not(:last-child) {
+	margin-bottom: var(--spacing-20);
+}
+
+.page-layout__main section:last-child {
+	margin-bottom: 0;
+}
+
+/* Container adjustments */
+.page-layout__main .container {
+	padding-top: var(--spacing-16);
+	padding-bottom: var(--spacing-16);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.page-layout__main .container {
+		padding-top: var(--spacing-12);
+		padding-bottom: var(--spacing-12);
+	}
+
+	.page-layout__main section:not(:last-child) {
+		margin-bottom: var(--spacing-16);
+	}
+}
+
+@media (max-width: 480px) {
+	.page-layout__main .container {
+		padding-top: var(--spacing-8);
+		padding-bottom: var(--spacing-8);
+	}
+
+	.page-layout__main section:not(:last-child) {
+		margin-bottom: var(--spacing-12);
+	}
+}

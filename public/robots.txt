@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://customkitchens.cy/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /calculator
+Allow: /planner
+Allow: /services
+Allow: /portfolio
+Allow: /about
+Allow: /contact
+Allow: /book
+Allow: /financing
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

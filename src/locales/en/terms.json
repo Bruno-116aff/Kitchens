@@ -1,0 +1,176 @@
+{
+	"hero": {
+		"title": "Terms of Service",
+		"subtitle": "Terms and Conditions for Our Services",
+		"lastUpdated": "Last updated: January 2024"
+	},
+	"introduction": {
+		"title": "Introduction",
+		"content": "These Terms of Service govern your use of Custom Kitchens Cyprus services. By using our services, you agree to be bound by these terms."
+	},
+	"acceptanceOfTerms": {
+		"title": "Acceptance of Terms",
+		"content": "By accessing or using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
+	},
+	"servicesDescription": {
+		"title": "Services Description",
+		"content": "Custom Kitchens Cyprus provides the following services:",
+		"items": [
+			"Kitchen design consultation and planning",
+			"Custom kitchen manufacturing",
+			"Professional installation services",
+			"Project management and coordination",
+			"After-sales support and maintenance"
+		]
+	},
+	"ordersAndPricing": {
+		"title": "Orders and Pricing",
+		"orderProcess": {
+			"title": "Order Process",
+			"content": "Our order process includes the following steps:",
+			"items": [
+				"Initial consultation and design discussion",
+				"Site measurement and assessment",
+				"Design proposal and quotation",
+				"Order confirmation and payment"
+			]
+		},
+		"pricing": {
+			"title": "Pricing",
+			"content": "Pricing is based on:",
+			"items": [
+				"Project specifications and materials",
+				"Complexity of design and installation",
+				"Current market rates for materials and labor",
+				"Any custom modifications or special requirements"
+			]
+		}
+	},
+	"paymentTerms": {
+		"title": "Payment Terms",
+		"content": "Payment terms are as follows:",
+		"paymentSchedule": {
+			"title": "Payment Schedule",
+			"items": [
+				"50% deposit required upon order confirmation",
+				"Remaining 50% due upon delivery",
+				"Additional payments may be required for changes",
+				"Late payment fees may apply"
+			]
+		},
+		"latePayments": {
+			"title": "Late Payments",
+			"content": "Late payments may result in additional charges and may delay project completion."
+		}
+	},
+	"deliveryAndInstallation": {
+		"title": "Delivery and Installation",
+		"delivery": {
+			"title": "Delivery",
+			"content": "Delivery terms include:",
+			"items": [
+				"Free delivery within Cyprus",
+				"Delivery dates are estimates and may vary",
+				"Customer must be available for delivery",
+				"Additional charges for special delivery requirements"
+			]
+		},
+		"installation": {
+			"title": "Installation",
+			"content": "Installation services include:",
+			"items": [
+				"Professional installation by certified technicians",
+				"Basic site preparation and cleanup",
+				"Connection of utilities and appliances",
+				"Final inspection and testing"
+			]
+		}
+	},
+	"warranties": {
+		"title": "Warranties",
+		"content": "We provide the following warranties:",
+		"materials": {
+			"title": "Materials Warranty",
+			"content": "Materials are covered by manufacturer warranties as specified."
+		},
+		"workmanship": {
+			"title": "Workmanship Warranty",
+			"content": "Installation work is warranted for 1 year from completion date."
+		},
+		"exclusions": {
+			"title": "Warranty Exclusions",
+			"content": "Warranties do not cover:",
+			"items": [
+				"Normal wear and tear",
+				"Damage from misuse or abuse",
+				"Modifications made by others",
+				"Acts of nature or accidents"
+			]
+		}
+	},
+	"cancellationAndRefunds": {
+		"title": "Cancellation and Refunds",
+		"cancellation": {
+			"title": "Cancellation Policy",
+			"content": "Cancellation terms:",
+			"items": [
+				"Orders may be cancelled before production begins",
+				"Cancellation fees may apply",
+				"Deposits may be non-refundable after design approval"
+			]
+		},
+		"refunds": {
+			"title": "Refunds",
+			"content": "Refunds are processed according to our refund policy and may take 5-10 business days."
+		}
+	},
+	"limitationOfLiability": {
+		"title": "Limitation of Liability",
+		"content": "Our liability is limited as follows:",
+		"items": [
+			"Total liability shall not exceed the contract value",
+			"We are not liable for indirect or consequential damages",
+			"Customer assumes responsibility for site conditions"
+		]
+	},
+	"intellectualProperty": {
+		"title": "Intellectual Property",
+		"content": "Intellectual property rights:",
+		"items": [
+			"Designs remain our intellectual property",
+			"Customer may not reproduce designs without permission",
+			"We respect third-party intellectual property rights"
+		]
+	},
+	"governingLaw": {
+		"title": "Governing Law",
+		"content": "These terms are governed by the laws of Cyprus and any disputes will be resolved in Cyprus courts."
+	},
+	"changesToTerms": {
+		"title": "Changes to Terms",
+		"content": "We may update these terms from time to time. Continued use of our services constitutes acceptance of updated terms."
+	},
+	"contactInformation": {
+		"title": "Contact Information",
+		"content": "For questions about these terms, contact us:",
+		"email": "Email: legal@customkitchenscyprus.com",
+		"phone": "Phone: +357 25 123456",
+		"address": "Address: 123 Kitchen Street, Nicosia, Cyprus"
+	},
+	"navigation": {
+		"title": "Quick Navigation",
+		"introduction": "Introduction",
+		"acceptanceOfTerms": "Acceptance of Terms",
+		"servicesDescription": "Services Description",
+		"ordersAndPricing": "Orders and Pricing",
+		"paymentTerms": "Payment Terms",
+		"deliveryAndInstallation": "Delivery and Installation",
+		"warranties": "Warranties",
+		"cancellationAndRefunds": "Cancellation and Refunds",
+		"limitationOfLiability": "Limitation of Liability",
+		"intellectualProperty": "Intellectual Property",
+		"governingLaw": "Governing Law",
+		"changesToTerms": "Changes to Terms",
+		"contactInformation": "Contact Information"
+	}
+}

@@ -1,0 +1,105 @@
+{
+	"hero": {
+		"title": "Custom Kitchens Made to Order",
+		"subtitle": "Design, Build & Install in Cyprus",
+		"description": "Complete kitchen solutions from concept to installation. We handle everything in-house – from design to delivery.",
+		"cta1": "Get Free 3D Design",
+		"cta2": "Calculate Price",
+		"cta3": "Book Free Consultation"
+	},
+	"trustBar": {
+		"guarantee": "5 Year Guarantee",
+		"financing": "0% Interest Financing",
+		"projects": "1000+ Completed Projects",
+		"installers": "Certified Installers"
+	},
+	"usp": {
+		"title": "Why Choose Us?",
+		"subtitle": "We handle everything in-house for the best results",
+		"steps": {
+			"design": {
+				"title": "Design",
+				"description": "Custom design tailored to your space and needs"
+			},
+			"build": {
+				"title": "Build",
+				"description": "Manufactured in our own facility with quality materials"
+			},
+			"deliver": {
+				"title": "Deliver",
+				"description": "Professional delivery to your location"
+			},
+			"install": {
+				"title": "Install",
+				"description": "Expert installation by our certified team"
+			}
+		}
+	},
+	"quiz": {
+		"title": "Quick Price Calculator",
+		"subtitle": "Get an instant estimate for your kitchen",
+		"button": "Start Calculator"
+	},
+	"portfolio": {
+		"title": "Our Latest Projects",
+		"subtitle": "See what we've created for our clients",
+		"filters": {
+			"all": "All Projects",
+			"modern": "Modern",
+			"classic": "Classic",
+			"minimalist": "Minimalist",
+			"luxury": "Luxury"
+		},
+		"cta": "Want Similar Kitchen?"
+	},
+	"process": {
+		"title": "Our Process",
+		"subtitle": "From consultation to completion in 6 simple steps",
+		"steps": {
+			"consultation": {
+				"title": "Free Consultation",
+				"description": "We discuss your needs and take measurements",
+				"duration": "1-2 hours"
+			},
+			"design": {
+				"title": "3D Design",
+				"description": "We create detailed 3D plans for your approval",
+				"duration": "3-5 days"
+			},
+			"approval": {
+				"title": "Design Approval",
+				"description": "Review and approve the final design",
+				"duration": "1-2 days"
+			},
+			"manufacturing": {
+				"title": "Manufacturing",
+				"description": "Your kitchen is built in our facility",
+				"duration": "2-3 weeks"
+			},
+			"delivery": {
+				"title": "Delivery",
+				"description": "Professional delivery to your home",
+				"duration": "1 day"
+			},
+			"installation": {
+				"title": "Installation",
+				"description": "Expert installation by our certified team",
+				"duration": "2-3 days"
+			}
+		}
+	},
+	"testimonials": {
+		"title": "What Our Clients Say",
+		"subtitle": "Real feedback from satisfied customers"
+	},
+	"cta": {
+		"title": "Ready to Start Your Dream Kitchen?",
+		"subtitle": "Get a free consultation and 3D design today",
+		"button": "Book Free Consultation"
+	},
+	"faq": {
+		"title": "Frequently Asked Questions",
+		"subtitle": "Common questions about our kitchen services"
+	}
+}
+

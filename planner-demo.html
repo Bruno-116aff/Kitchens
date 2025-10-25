@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Designer - Simple Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.9);
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+
+    .btn-outline:hover {
+      background: #667eea;
+      color: white;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .library {
+      width: 350px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    .library-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .library-header h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .library-content {
+      padding: 1.5rem;
+    }
+
+    .module-category {
+      margin-bottom: 2rem;
+    }
+
+    .module-category h4 {
+      color: #374151;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+
+    .module-item {
+      background: #f8fafc;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      cursor: grab;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .module-item:hover {
+      border-color: #667eea;
+      background: #f0f4ff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    }
+
+    .module-item:active {
+      cursor: grabbing;
+      transform: scale(0.98);
+    }
+
+    .module-icon {
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .module-info h5 {
+      color: #1f2937;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+
+    .module-info p {
+      color: #6b7280;
+      font-size: 0.875rem;
+    }
+
+    .workspace {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      overflow: hidden;
+      min-height: 600px;
+      position: relative;
+      animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
+
+    .workspace-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .workspace-header h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .workspace-content {
+      padding: 2rem;
+      height: calc(100% - 80px);
+      position: relative;
+    }
+
+    .room {
+      width: 100%;
+      height: 100%;
+      border: 3px dashed #d1d5db;
+      border-radius: 12px;
+      background: #f9fafb;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+    }
+
+    .room-placeholder {
+      text-align: center;
+      color: #6b7280;
+    }
+
+    .room-placeholder h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .room-placeholder p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .drop-zone {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 2px dashed #667eea;
+      border-radius: 12px;
+      background: rgba(102, 126, 234, 0.1);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: #667eea;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .drop-zone.active {
+      display: flex;
+    }
+
+    .module {
+      position: absolute;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      cursor: move;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-weight: 600;
+      font-size: 0.875rem;
+      min-width: 80px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .module:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .module.selected {
+      border: 3px solid #f093fb;
+      box-shadow: 0 0 0 3px rgba(240, 147, 251, 0.3);
+    }
+
+    .info {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .stats {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .stats span {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .content {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+      }
+
+      .library {
+        width: 100%;
+        height: 300px;
+      }
+
+      .workspace {
+        min-height: 500px;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 1.5rem 1rem;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+      }
+
+      .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .stats span {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>🎨 Kitchen Designer</h1>
+    <p>Create your perfect kitchen in minutes</p>
+    <div class="actions">
+      <button class="btn btn-primary" onclick="saveProject()">
+        💾 Save Project
+      </button>
+      <button class="btn btn-secondary" onclick="exportProject()">
+        📤 Export
+      </button>
+      <button class="btn btn-outline" onclick="toggleLibrary()">
+        📚 Hide Library
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="library" id="library">
+      <div class="library-header">
+        <h3>Module Library</h3>
+        <p>Drag modules to add them to your kitchen</p>
+      </div>
+      <div class="library-content">
+        <div class="module-category">
+          <h4>🏠 Cabinets</h4>
+          <div class="module-item" draggable="true"
+            data-module='{"type":"cabinet","name":"Base Cabinet","icon":"📦","width":80,"height":60}'>
+            <div class="module-icon">📦</div>
+            <div class="module-info">
+              <h5>Base Cabinet</h5>
+              <p>80×60 cm</p>
+            </div>
+          </div>
+          <div class="module-item" draggable="true"
+            data-module='{"type":"cabinet","name":"Wall Cabinet","icon":"📦","width":80,"height":40}'>
+            <div class="module-icon">📦</div>
+            <div class="module-info">
+              <h5>Wall Cabinet</h5>
+              <p>80×40 cm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-category">
+          <h4>🪑 Counters</h4>
+          <div class="module-item" draggable="true"
+            data-module='{"type":"counter","name":"Counter Top","icon":"🪑","width":120,"height":60}'>
+            <div class="module-icon">🪑</div>
+            <div class="module-info">
+              <h5>Counter Top</h5>
+              <p>120×60 cm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-category">
+          <h4>🧊 Appliances</h4>
+          <div class="module-item" draggable="true"
+            data-module='{"type":"appliance","name":"Refrigerator","icon":"🧊","width":70,"height":80}'>
+            <div class="module-icon">🧊</div>
+            <div class="module-info">
+              <h5>Refrigerator</h5>
+              <p>70×80 cm</p>
+            </div>
+          </div>
+          <div class="module-item" draggable="true"
+            data-module='{"type":"appliance","name":"Dishwasher","icon":"🍽️","width":60,"height":60}'>
+            <div class="module-icon">🍽️</div>
+            <div class="module-info">
+              <h5>Dishwasher</h5>
+              <p>60×60 cm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="module-category">
+          <h4>🚰 Fixtures</h4>
+          <div class="module-item" draggable="true"
+            data-module='{"type":"sink","name":"Single Sink","icon":"🚰","width":70,"height":50}'>
+            <div class="module-icon">🚰</div>
+            <div class="module-info">
+              <h5>Single Sink</h5>
+              <p>70×50 cm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="workspace">
+      <div class="workspace-header">
+        <h3>Kitchen Workspace</h3>
+        <p>400×300 cm room</p>
+      </div>
+      <div class="workspace-content">
+        <div class="room" id="room">
+          <div class="drop-zone" id="dropZone">
+            Drop module here
+          </div>
+          <div class="room-placeholder" id="placeholder">
+            <h4>🎨 Start Designing</h4>
+            <p>Drag modules from the library to create your kitchen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="stats">
+      <span id="moduleCount">📦 0 modules</span>
+      <span>📐 400×300 cm</span>
+      <span id="selectedModule">✅ None selected</span>
+    </div>
+  </div>
+
+  <script>
+    let modules = [];
+    let selectedModule = null;
+    let moduleIdCounter = 0;
+
+    // Drag and drop functionality
+    const moduleItems = document.querySelectorAll('.module-item');
+    const room = document.getElementById('room');
+    const dropZone = document.getElementById('dropZone');
+    const placeholder = document.getElementById('placeholder');
+    const moduleCount = document.getElementById('moduleCount');
+    const selectedModuleSpan = document.getElementById('selectedModule');
+
+    moduleItems.forEach(item => {
+      item.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', item.dataset.module);
+        item.style.opacity = '0.5';
+      });
+
+      item.addEventListener('dragend', (e) => {
+        item.style.opacity = '1';
+      });
+    });
+
+    room.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.classList.add('active');
+    });
+
+    room.addEventListener('dragleave', (e) => {
+      if (!room.contains(e.relatedTarget)) {
+        dropZone.classList.remove('active');
+      }
+    });
+
+    room.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('active');
+
+      const moduleData = JSON.parse(e.dataTransfer.getData('text/plain'));
+      const rect = room.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      addModule(moduleData, x, y);
+    });
+
+    function addModule(moduleData, x, y) {
+      const module = {
+        id: `module-${++moduleIdCounter}`,
+        ...moduleData,
+        x: x - 40, // Center the module
+        y: y - 20
+      };
+
+      modules.push(module);
+      renderModule(module);
+      updateStats();
+      hidePlaceholder();
+    }
+
+    function renderModule(module) {
+      const moduleElement = document.createElement('div');
+      moduleElement.className = 'module';
+      moduleElement.id = module.id;
+      moduleElement.style.left = module.x + 'px';
+      moduleElement.style.top = module.y + 'px';
+      moduleElement.innerHTML = `
+                <div>${module.icon}</div>
+                <div>${module.name}</div>
+            `;
+
+      moduleElement.addEventListener('click', (e) => {
+        e.stopPropagation();
+        selectModule(module.id);
+      });
+
+      moduleElement.addEventListener('mousedown', (e) => {
+        if (e.button === 0) { // Left mouse button
+          startDrag(moduleElement, e);
+        }
+      });
+
+      room.appendChild(moduleElement);
+    }
+
+    function selectModule(moduleId) {
+      // Remove previous selection
+      document.querySelectorAll('.module').forEach(m => m.classList.remove('selected'));
+
+      // Select new module
+      const moduleElement = document.getElementById(moduleId);
+      if (moduleElement) {
+        moduleElement.classList.add('selected');
+        selectedModule = moduleId;
+        const module = modules.find(m => m.id === moduleId);
+        selectedModuleSpan.textContent = `✅ ${module.name}`;
+      }
+    }
+
+    function startDrag(element, e) {
+      const startX = e.clientX - element.offsetLeft;
+      const startY = e.clientY - element.offsetTop;
+
+      function onMouseMove(e) {
+        const newX = e.clientX - startX;
+        const newY = e.clientY - startY;
+
+        // Keep module within room bounds
+        const maxX = room.offsetWidth - element.offsetWidth;
+        const maxY = room.offsetHeight - element.offsetHeight;
+
+        element.style.left = Math.max(0, Math.min(newX, maxX)) + 'px';
+        element.style.top = Math.max(0, Math.min(newY, maxY)) + 'px';
+      }
+
+      function onMouseUp() {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+
+        // Update module position in data
+        const moduleId = element.id;
+        const module = modules.find(m => m.id === moduleId);
+        if (module) {
+          module.x = parseInt(element.style.left);
+          module.y = parseInt(element.style.top);
+        }
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mouseup', onMouseUp);
+    }
+
+    function updateStats() {
+      moduleCount.textContent = `📦 ${modules.length} modules`;
+    }
+
+    function hidePlaceholder() {
+      if (modules.length > 0) {
+        placeholder.style.display = 'none';
+      }
+    }
+
+    function saveProject() {
+      const project = {
+        name: 'My Dream Kitchen',
+        modules: modules,
+        roomSize: { width: 400, height: 300 },
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      };
+
+      localStorage.setItem('kitchen-project', JSON.stringify(project));
+      alert('Project saved successfully!');
+    }
+
+    function exportProject() {
+      const project = {
+        name: 'My Dream Kitchen',
+        modules: modules,
+        roomSize: { width: 400, height: 300 },
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      };
+
+      const dataStr = JSON.stringify(project, null, 2);
+      const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+      const exportFileDefaultName = 'my-dream-kitchen.json';
+
+      const linkElement = document.createElement('a');
+      linkElement.setAttribute('href', dataUri);
+      linkElement.setAttribute('download', exportFileDefaultName);
+      linkElement.click();
+    }
+
+    function toggleLibrary() {
+      const library = document.getElementById('library');
+      const button = event.target;
+
+      if (library.style.display === 'none') {
+        library.style.display = 'block';
+        button.textContent = '📚 Hide Library';
+      } else {
+        library.style.display = 'none';
+        button.textContent = '📖 Show Library';
+      }
+    }
+
+    // Load saved project on page load
+    window.addEventListener('load', () => {
+      const savedProject = localStorage.getItem('kitchen-project');
+      if (savedProject) {
+        const project = JSON.parse(savedProject);
+        modules = project.modules || [];
+        moduleIdCounter = modules.length;
+
+        modules.forEach(module => {
+          renderModule(module);
+        });
+
+        updateStats();
+        hidePlaceholder();
+      }
+    });
+
+    // Click on room to deselect
+    room.addEventListener('click', (e) => {
+      if (e.target === room) {
+        document.querySelectorAll('.module').forEach(m => m.classList.remove('selected'));
+        selectedModule = null;
+        selectedModuleSpan.textContent = '✅ None selected';
+      }
+    });
+  </script>
+</body>
+
+</html>

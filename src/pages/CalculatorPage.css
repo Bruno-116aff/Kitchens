@@ -1,0 +1,27 @@
+.calculator-page {
+	min-height: 80vh;
+	padding: var(--spacing-8) 0;
+	background: var(--color-gray-50);
+}
+
+.calculator-page__header {
+	text-align: center;
+	margin-bottom: var(--spacing-8);
+}
+
+.calculator-page__header h1 {
+	font-size: var(--font-size-4xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-4);
+}
+
+.calculator-page__header p {
+	font-size: var(--font-size-lg);
+	color: var(--color-text-secondary);
+}
+
+.calculator-page__content {
+	max-width: 1000px;
+	margin: 0 auto;
+}

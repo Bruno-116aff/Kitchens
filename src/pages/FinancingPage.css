@@ -1,0 +1,196 @@
+.financing-page {
+	padding: var(--spacing-20) 0;
+	background: var(--color-gray-50);
+}
+
+.financing-page .container {
+	max-width: var(--container-max-width);
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+}
+
+.financing-page__header {
+	text-align: center;
+	margin-bottom: var(--spacing-16);
+}
+
+.financing-page__header h1 {
+	font-size: var(--font-size-4xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-4);
+}
+
+.financing-page__header p {
+	font-size: var(--font-size-lg);
+	color: var(--color-text-secondary);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.financing-page__content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-8);
+	margin-bottom: var(--spacing-16);
+}
+
+.financing-page__calculator {
+	background: var(--color-white);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+	overflow: hidden;
+}
+
+.financing-page__comparison {
+	background: var(--color-white);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+	overflow: hidden;
+}
+
+.financing-page__info {
+	margin-bottom: var(--spacing-16);
+}
+
+.financing-page__info-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: var(--spacing-6);
+}
+
+.financing-page__info-card {
+	padding: var(--spacing-6);
+	background: var(--color-white);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+	text-align: center;
+	transition: transform var(--transition-fast);
+}
+
+.financing-page__info-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow-lg);
+}
+
+.financing-page__info-card h3 {
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-3);
+}
+
+.financing-page__info-card p {
+	font-size: var(--font-size-sm);
+	color: var(--color-text-secondary);
+	line-height: var(--line-height-relaxed);
+}
+
+.financing-page__cta {
+	text-align: center;
+	padding: var(--spacing-12);
+	background: var(--color-white);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+}
+
+.financing-page__cta h2 {
+	font-size: var(--font-size-3xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-4);
+}
+
+.financing-page__cta p {
+	font-size: var(--font-size-lg);
+	color: var(--color-text-secondary);
+	margin-bottom: var(--spacing-8);
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.financing-page__cta-buttons {
+	display: flex;
+	justify-content: center;
+	gap: var(--spacing-4);
+	flex-wrap: wrap;
+}
+
+.financing-page__cta-btn {
+	display: inline-flex;
+	align-items: center;
+	padding: var(--spacing-4) var(--spacing-8);
+	background: var(--color-gray-100);
+	color: var(--color-text-primary);
+	text-decoration: none;
+	border-radius: var(--border-radius-lg);
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-semibold);
+	transition: all var(--transition-fast);
+	border: 2px solid var(--color-gray-200);
+}
+
+.financing-page__cta-btn:hover {
+	background: var(--color-gray-200);
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+}
+
+.financing-page__cta-btn--primary {
+	background: var(--color-primary);
+	color: var(--color-white);
+	border-color: var(--color-primary);
+}
+
+.financing-page__cta-btn--primary:hover {
+	background: var(--color-primary-dark);
+	border-color: var(--color-primary-dark);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.financing-page {
+		padding: var(--spacing-12) 0;
+	}
+
+	.financing-page__header h1 {
+		font-size: var(--font-size-3xl);
+	}
+
+	.financing-page__header p {
+		font-size: var(--font-size-base);
+	}
+
+	.financing-page__info-grid {
+		grid-template-columns: 1fr;
+		gap: var(--spacing-4);
+	}
+
+	.financing-page__info-card {
+		padding: var(--spacing-4);
+	}
+
+	.financing-page__cta {
+		padding: var(--spacing-8);
+	}
+
+	.financing-page__cta h2 {
+		font-size: var(--font-size-2xl);
+	}
+
+	.financing-page__cta p {
+		font-size: var(--font-size-base);
+	}
+
+	.financing-page__cta-buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.financing-page__cta-btn {
+		width: 100%;
+		max-width: 300px;
+		justify-content: center;
+	}
+}

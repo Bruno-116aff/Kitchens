@@ -1,0 +1,260 @@
+.finance-comparison {
+	background: var(--color-white);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-gray-200);
+	overflow: hidden;
+}
+
+.finance-comparison__header {
+	padding: var(--spacing-6);
+	background: var(--color-gray-50);
+	border-bottom: 1px solid var(--color-gray-200);
+	text-align: center;
+}
+
+.finance-comparison__header h3 {
+	font-size: var(--font-size-xl);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-2);
+}
+
+.finance-comparison__header p {
+	font-size: var(--font-size-sm);
+	color: var(--color-text-secondary);
+}
+
+.finance-comparison__placeholder {
+	padding: var(--spacing-8);
+	text-align: center;
+	background: var(--color-gray-50);
+}
+
+.finance-comparison__placeholder h3 {
+	font-size: var(--font-size-lg);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-2);
+}
+
+.finance-comparison__placeholder p {
+	color: var(--color-text-secondary);
+}
+
+.finance-comparison__options {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--spacing-6);
+	padding: var(--spacing-6);
+}
+
+.finance-comparison__option {
+	position: relative;
+	padding: var(--spacing-6);
+	background: var(--color-white);
+	border: 2px solid var(--color-gray-200);
+	border-radius: var(--border-radius-lg);
+	transition: all var(--transition-fast);
+}
+
+.finance-comparison__option:hover {
+	border-color: var(--color-primary);
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-lg);
+}
+
+.finance-comparison__option--recommended {
+	border-color: var(--color-primary);
+	background: linear-gradient(
+		135deg,
+		var(--color-primary) 0%,
+		var(--color-primary-light) 100%
+	);
+	color: var(--color-white);
+}
+
+.finance-comparison__option--recommended .finance-comparison__option-header h4,
+.finance-comparison__option--recommended .finance-comparison__option-header p,
+.finance-comparison__option--recommended .finance-comparison__detail-row span,
+.finance-comparison__option--recommended
+	.finance-comparison__option-features
+	h5,
+.finance-comparison__option--recommended
+	.finance-comparison__option-features
+	li {
+	color: var(--color-white);
+}
+
+.finance-comparison__recommended-badge {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--color-accent);
+	color: var(--color-white);
+	padding: var(--spacing-2) var(--spacing-4);
+	border-radius: var(--border-radius-full);
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-semibold);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.finance-comparison__option-header {
+	margin-bottom: var(--spacing-4);
+	text-align: center;
+}
+
+.finance-comparison__option-header h4 {
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-2);
+}
+
+.finance-comparison__option-header p {
+	font-size: var(--font-size-sm);
+	color: var(--color-text-secondary);
+}
+
+.finance-comparison__option-details {
+	margin-bottom: var(--spacing-4);
+}
+
+.finance-comparison__detail-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--spacing-2) 0;
+	border-bottom: 1px solid var(--color-gray-100);
+}
+
+.finance-comparison__detail-row:last-child {
+	border-bottom: none;
+}
+
+.finance-comparison__detail-row span:first-child {
+	font-size: var(--font-size-sm);
+	color: var(--color-text-secondary);
+}
+
+.finance-comparison__detail-row span:last-child {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	color: var(--color-text-primary);
+}
+
+.finance-comparison__detail-value--primary {
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-primary);
+}
+
+.finance-comparison__option--recommended
+	.finance-comparison__detail-value--primary {
+	color: var(--color-white);
+}
+
+.finance-comparison__option-features {
+	margin-bottom: var(--spacing-4);
+}
+
+.finance-comparison__option-features h5 {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--spacing-2);
+}
+
+.finance-comparison__option-features ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.finance-comparison__option-features li {
+	font-size: var(--font-size-xs);
+	color: var(--color-text-secondary);
+	margin-bottom: var(--spacing-1);
+	padding-left: var(--spacing-4);
+	position: relative;
+}
+
+.finance-comparison__option-features li::before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+	color: var(--color-success);
+	font-weight: var(--font-weight-bold);
+}
+
+.finance-comparison__option--recommended
+	.finance-comparison__option-features
+	li::before {
+	color: var(--color-white);
+}
+
+.finance-comparison__select-btn {
+	width: 100%;
+	padding: var(--spacing-3);
+	background: var(--color-primary);
+	color: var(--color-white);
+	border: none;
+	border-radius: var(--border-radius-md);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-semibold);
+	cursor: pointer;
+	transition: background-color var(--transition-fast);
+}
+
+.finance-comparison__select-btn:hover {
+	background: var(--color-primary-dark);
+}
+
+.finance-comparison__option--recommended .finance-comparison__select-btn {
+	background: var(--color-white);
+	color: var(--color-primary);
+}
+
+.finance-comparison__option--recommended .finance-comparison__select-btn:hover {
+	background: var(--color-gray-100);
+}
+
+.finance-comparison__disclaimer {
+	padding: var(--spacing-4) var(--spacing-6);
+	background: var(--color-gray-50);
+	border-top: 1px solid var(--color-gray-200);
+}
+
+.finance-comparison__disclaimer p {
+	font-size: var(--font-size-xs);
+	color: var(--color-text-secondary);
+	text-align: center;
+	line-height: var(--line-height-relaxed);
+}
+
+.finance-comparison__disclaimer strong {
+	color: var(--color-text-primary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.finance-comparison__options {
+		grid-template-columns: 1fr;
+		gap: var(--spacing-4);
+		padding: var(--spacing-4);
+	}
+
+	.finance-comparison__option {
+		padding: var(--spacing-4);
+	}
+
+	.finance-comparison__detail-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var(--spacing-1);
+	}
+
+	.finance-comparison__detail-row span:last-child {
+		font-weight: var(--font-weight-semibold);
+	}
+}

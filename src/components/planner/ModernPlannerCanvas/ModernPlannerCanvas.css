@@ -1,0 +1,287 @@
+/* Modern Planner Canvas Styles */
+.modern-planner-canvas-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background: #f8fafc;
+}
+
+.modern-planner-toolbar {
+	display: flex;
+	gap: 2rem;
+	padding: 1rem;
+	background: white;
+	border-bottom: 1px solid #e2e8f0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modern-planner-toolbar__section {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.modern-planner-toolbar__section h3 {
+	margin: 0;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #374151;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.modern-planner-toolbar__buttons {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.modern-planner-toolbar__buttons button {
+	padding: 0.5rem 1rem;
+	border: 1px solid #d1d5db;
+	border-radius: 0.375rem;
+	background: white;
+	color: #374151;
+	font-size: 0.875rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.modern-planner-toolbar__buttons button:hover {
+	background: #f3f4f6;
+	border-color: #9ca3af;
+}
+
+.modern-planner-toolbar__buttons button.active {
+	background: #3b82f6;
+	color: white;
+	border-color: #3b82f6;
+}
+
+.modern-planner-toolbar__buttons button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.modern-planner-toolbar__info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.modern-planner-toolbar__info p {
+	margin: 0;
+	font-size: 0.875rem;
+	color: #6b7280;
+}
+
+.modern-planner-canvas {
+	flex: 1;
+	position: relative;
+	overflow: auto;
+	padding: 2rem;
+	background: #f8fafc;
+}
+
+.modern-planner-canvas--drag-over {
+	background: #dbeafe;
+}
+
+.modern-planner-room {
+	position: relative;
+	margin: 0 auto;
+	background: white;
+	border: 2px solid #374151;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	min-width: 400px;
+	min-height: 300px;
+}
+
+.modern-planner-grid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.modern-planner-grid-line {
+	position: absolute;
+	background: #e5e7eb;
+}
+
+.modern-planner-grid-line--vertical {
+	width: 1px;
+	height: 100%;
+}
+
+.modern-planner-grid-line--horizontal {
+	height: 1px;
+	width: 100%;
+}
+
+.modern-planner-module {
+	position: absolute;
+	border: 2px solid #9ca3af;
+	border-radius: 0.375rem;
+	background: white;
+	cursor: move;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modern-planner-module:hover {
+	border-color: #6b7280;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.modern-planner-module--selected {
+	border-color: #3b82f6;
+	box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.modern-planner-module--dragging {
+	opacity: 0.7;
+	transform: rotate(5deg) !important;
+	z-index: 1000;
+}
+
+.modern-planner-module__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.modern-planner-module__icon {
+	font-size: 1.5rem;
+	margin-bottom: 0.25rem;
+}
+
+.modern-planner-module__name {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #374151;
+	margin-bottom: 0.125rem;
+}
+
+.modern-planner-module__dimensions {
+	font-size: 0.625rem;
+	color: #6b7280;
+}
+
+.modern-planner-module__controls {
+	position: absolute;
+	top: -0.5rem;
+	right: -0.5rem;
+	display: flex;
+	gap: 0.25rem;
+}
+
+.modern-planner-module__control-btn {
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid #d1d5db;
+	border-radius: 50%;
+	background: white;
+	color: #374151;
+	font-size: 0.75rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modern-planner-module__control-btn:hover {
+	background: #f3f4f6;
+	border-color: #9ca3af;
+}
+
+.modern-planner-module__control-btn--danger:hover {
+	background: #fef2f2;
+	border-color: #fca5a5;
+	color: #dc2626;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.modern-planner-toolbar {
+		flex-direction: column;
+		gap: 1rem;
+		padding: 0.75rem;
+	}
+
+	.modern-planner-toolbar__buttons {
+		flex-wrap: wrap;
+	}
+
+	.modern-planner-canvas {
+		padding: 1rem;
+	}
+
+	.modern-planner-room {
+		min-width: 300px;
+		min-height: 200px;
+	}
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	.modern-planner-canvas-container {
+		background: #1f2937;
+	}
+
+	.modern-planner-toolbar {
+		background: #374151;
+		border-bottom-color: #4b5563;
+	}
+
+	.modern-planner-toolbar__section h3 {
+		color: #f3f4f6;
+	}
+
+	.modern-planner-toolbar__buttons button {
+		background: #4b5563;
+		border-color: #6b7280;
+		color: #f3f4f6;
+	}
+
+	.modern-planner-toolbar__buttons button:hover {
+		background: #6b7280;
+	}
+
+	.modern-planner-canvas {
+		background: #1f2937;
+	}
+
+	.modern-planner-room {
+		background: #374151;
+		border-color: #6b7280;
+	}
+
+	.modern-planner-grid-line {
+		background: #4b5563;
+	}
+
+	.modern-planner-module {
+		background: #4b5563;
+		border-color: #6b7280;
+	}
+
+	.modern-planner-module__name {
+		color: #f3f4f6;
+	}
+
+	.modern-planner-module__dimensions {
+		color: #9ca3af;
+	}
+}
+
+

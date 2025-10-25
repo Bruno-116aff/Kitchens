@@ -1,0 +1,156 @@
+{
+	"hero": {
+		"title": "Our Kitchen Design Process",
+		"subtitle": "From Dream to Reality in 6 Simple Steps",
+		"description": "Our proven process ensures your kitchen project runs smoothly from initial consultation to final installation. We handle every detail so you can focus on the excitement of your new kitchen.",
+		"imageAlt": "Kitchen design consultation process"
+	},
+	"overview": {
+		"title": "How We Work",
+		"subtitle": "Our streamlined process ensures quality results and timely delivery"
+	},
+	"steps": {
+		"consultation": {
+			"title": "Initial Consultation",
+			"description": "We start with a comprehensive discussion about your needs, preferences, and budget to understand your vision.",
+			"duration": "1-2 hours",
+			"details": [
+				"Discuss your lifestyle and cooking habits",
+				"Review your budget and timeline expectations",
+				"Explore design preferences and style inspirations",
+				"Answer all your questions about our process"
+			],
+			"guarantees": [
+				"Free consultation with no obligation",
+				"Detailed project proposal within 48 hours"
+			]
+		},
+		"measurement": {
+			"title": "Precise Measurement",
+			"description": "Our expert team visits your home to take accurate measurements and assess the space for optimal design.",
+			"duration": "2-3 hours",
+			"details": [
+				"Professional measurement of all dimensions",
+				"Assessment of existing utilities and connections",
+				"Identification of structural considerations",
+				"Documentation of current space conditions"
+			],
+			"guarantees": [
+				"100% accurate measurements guaranteed",
+				"Free re-measurement if needed"
+			]
+		},
+		"design": {
+			"title": "3D Design & Planning",
+			"description": "We create detailed 3D designs and technical drawings to bring your vision to life before production begins.",
+			"duration": "1-2 weeks",
+			"details": [
+				"Create detailed 3D visualizations",
+				"Develop technical drawings and specifications",
+				"Select materials and finishes",
+				"Present design options for your approval"
+			],
+			"guarantees": [
+				"Unlimited design revisions included",
+				"3D walkthrough of your new kitchen"
+			]
+		},
+		"production": {
+			"title": "Custom Manufacturing",
+			"description": "Your kitchen components are crafted in our state-of-the-art workshop using premium materials and precision techniques.",
+			"duration": "3-4 weeks",
+			"details": [
+				"Custom manufacturing of all components",
+				"Quality control at every production stage",
+				"Professional finishing and assembly",
+				"Packaging for safe transportation"
+			],
+			"guarantees": [
+				"Premium materials and craftsmanship",
+				"Quality inspection before delivery"
+			]
+		},
+		"delivery": {
+			"title": "Careful Delivery",
+			"description": "We coordinate delivery to ensure your kitchen arrives safely and on schedule, ready for installation.",
+			"duration": "1 day",
+			"details": [
+				"Careful packaging and protection",
+				"Professional delivery team",
+				"Inventory check upon arrival",
+				"Safe storage until installation"
+			],
+			"guarantees": [
+				"Free delivery within Cyprus",
+				"Insurance coverage for all items"
+			]
+		},
+		"installation": {
+			"title": "Professional Installation",
+			"description": "Our skilled installers complete the final assembly and installation, ensuring everything works perfectly.",
+			"duration": "2-3 days",
+			"details": [
+				"Professional installation by certified technicians",
+				"Connection of all utilities and appliances",
+				"Final adjustments and testing",
+				"Cleanup and final inspection"
+			],
+			"guarantees": [
+				"Professional installation warranty",
+				"Free adjustments for 30 days"
+			]
+		}
+	},
+	"stepDetails": {
+		"title": "What We Do"
+	},
+	"stepGuarantees": {
+		"title": "Our Guarantees"
+	},
+	"timeline": {
+		"title": "Project Timeline",
+		"subtitle": "Typical project completion in 6-8 weeks",
+		"week1": {
+			"title": "Consultation & Measurement",
+			"description": "Initial meeting, space assessment, and detailed measurements to understand your requirements."
+		},
+		"week2": {
+			"title": "Design Development",
+			"description": "Creating 3D designs, material selection, and presenting options for your approval."
+		},
+		"week4": {
+			"title": "Production Phase",
+			"description": "Custom manufacturing of all components in our workshop with quality control at every step."
+		},
+		"week7": {
+			"title": "Delivery & Installation",
+			"description": "Safe delivery and professional installation by our certified technicians."
+		}
+	},
+	"guarantees": {
+		"title": "Our Quality Guarantees",
+		"subtitle": "We stand behind our work with comprehensive guarantees",
+		"quality": {
+			"title": "Quality Assurance",
+			"description": "All materials and workmanship are guaranteed to meet our high standards."
+		},
+		"timeline": {
+			"title": "Timeline Commitment",
+			"description": "We commit to delivering your project on time or provide compensation for delays."
+		},
+		"pricing": {
+			"title": "Price Protection",
+			"description": "No hidden costs or surprise charges. The price you agree to is the price you pay."
+		},
+		"support": {
+			"title": "Ongoing Support",
+			"description": "We provide ongoing support and maintenance services for your peace of mind."
+		}
+	},
+	"cta": {
+		"title": "Ready to Start Your Kitchen Project?",
+		"description": "Let our experienced team guide you through our proven process to create your dream kitchen.",
+		"start": "Start Your Project",
+		"calculator": "Get Price Estimate"
+	}
+}

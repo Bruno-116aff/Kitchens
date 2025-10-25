@@ -1,0 +1,133 @@
+{
+	"hero": {
+		"title": "Frequently Asked Questions",
+		"subtitle": "Everything You Need to Know",
+		"description": "Find answers to common questions about our kitchen design process, materials, delivery, and more. Can't find what you're looking for? Contact us directly."
+	},
+	"search": {
+		"placeholder": "Search questions..."
+	},
+	"categories": {
+		"all": "All Questions",
+		"ordering": "Ordering & Design",
+		"materials": "Materials & Quality",
+		"delivery": "Delivery & Installation",
+		"payment": "Payment & Financing",
+		"warranty": "Warranty & Support",
+		"general": "General"
+	},
+	"questions": {
+		"orderProcess": {
+			"question": "How does the ordering process work?",
+			"answer": "Our ordering process is simple and transparent. First, we schedule a free consultation to understand your needs and preferences. Then we take precise measurements of your space and create a detailed 3D design. Once you approve the design, we provide a fixed-price quote with no hidden costs. After payment, we begin manufacturing your custom kitchen."
+		},
+		"designTime": {
+			"question": "How long does the design process take?",
+			"answer": "The design process typically takes 1-2 weeks. This includes creating detailed 3D visualizations, technical drawings, material selection, and presenting options for your approval. We include unlimited design revisions to ensure you're completely satisfied with the final design."
+		},
+		"customDesign": {
+			"question": "Do you offer custom design services?",
+			"answer": "Yes, we specialize in custom kitchen designs tailored to your specific space and requirements. Our experienced designers work with you to create unique solutions that maximize functionality and reflect your personal style. Every kitchen we create is custom-made to fit your exact specifications."
+		},
+		"designChanges": {
+			"question": "Can I make changes to the design after approval?",
+			"answer": "We understand that preferences can change. Minor adjustments can usually be accommodated during the design phase at no extra cost. However, significant changes after production has begun may incur additional charges. We'll always discuss any potential costs before making changes."
+		},
+		"materialQuality": {
+			"question": "What materials do you use for kitchen cabinets?",
+			"answer": "We use only premium materials including solid wood, MDF, and high-quality laminates. All our materials are sourced from reputable suppliers and meet strict quality standards. We offer a wide range of finishes from classic wood grains to modern high-gloss surfaces."
+		},
+		"materialOptions": {
+			"question": "What material options are available?",
+			"answer": "We offer extensive material options including solid wood (oak, ash, walnut), MDF with various finishes, high-gloss laminates, glass, and metal accents. For countertops, we provide laminate, acrylic, quartz, natural stone, and wood options. All materials come with detailed specifications and samples for your review."
+		},
+		"countertopMaterials": {
+			"question": "What countertop materials do you recommend?",
+			"answer": "Our recommendations depend on your budget and lifestyle. Quartz offers excellent durability and low maintenance. Natural stone provides unique beauty but requires more care. Acrylic surfaces are seamless and modern. Laminate offers great value for money. We'll help you choose based on your cooking habits and maintenance preferences."
+		},
+		"hardwareQuality": {
+			"question": "What hardware brands do you use?",
+			"answer": "We use premium hardware from trusted brands like Blum, Hettich, and Grass. All hardware includes soft-close mechanisms, full-extension drawers, and quality hinges. We offer various styles from modern minimal to classic traditional to match your design preferences."
+		},
+		"deliveryTime": {
+			"question": "How long does delivery take?",
+			"answer": "Delivery typically takes 3-4 weeks after design approval and payment. This includes manufacturing time in our workshop, quality control, and packaging. We'll provide you with a specific delivery date and keep you updated throughout the process. Rush orders may be possible for an additional fee."
+		},
+		"deliveryArea": {
+			"question": "Do you deliver throughout Cyprus?",
+			"answer": "Yes, we provide free delivery throughout Cyprus. Our professional delivery team ensures safe transportation of your kitchen components. We coordinate delivery timing to work with your schedule and provide tracking updates so you know exactly when to expect your delivery."
+		},
+		"installationProcess": {
+			"question": "What does the installation process involve?",
+			"answer": "Our certified installers handle the complete installation process. This includes assembling cabinets, installing countertops, connecting utilities, mounting appliances, and making final adjustments. Installation typically takes 2-3 days depending on the complexity of your kitchen. We ensure everything is properly connected and functioning before we leave."
+		},
+		"installationTime": {
+			"question": "How long does installation take?",
+			"answer": "Installation typically takes 2-3 days for a complete kitchen. Simple kitchens may be completed in 1-2 days, while complex designs with custom features may require 3-4 days. We'll provide a detailed timeline during the design phase so you know exactly what to expect."
+		},
+		"paymentMethods": {
+			"question": "What payment methods do you accept?",
+			"answer": "We accept all major credit cards, bank transfers, and cash payments. For larger projects, we offer flexible payment plans. Typically, we require a 50% deposit to begin manufacturing, with the balance due upon delivery. We also work with financing partners to offer installment plans."
+		},
+		"financingOptions": {
+			"question": "Do you offer financing options?",
+			"answer": "Yes, we offer several financing options including 0% interest installment plans for qualified customers. We partner with local banks to provide competitive rates and flexible terms. Our team can help you explore financing options during the consultation process."
+		},
+		"paymentSchedule": {
+			"question": "What is the payment schedule?",
+			"answer": "Our standard payment schedule is 50% deposit upon order confirmation to begin manufacturing, and the remaining 50% due upon delivery. For larger projects, we may offer a three-payment plan: 40% deposit, 40% at production start, and 20% upon completion. All payment terms are clearly outlined in your contract."
+		},
+		"priceGuarantee": {
+			"question": "Is the price guaranteed?",
+			"answer": "Yes, once you approve the design and sign the contract, the price is fixed and guaranteed. There are no hidden costs or surprise charges. The only exception would be if you request changes after production has begun, which we'll discuss with you beforehand."
+		},
+		"warrantyCoverage": {
+			"question": "What warranty do you provide?",
+			"answer": "We provide a comprehensive warranty covering materials and workmanship. Cabinets and hardware are covered for 2 years, countertops for 1 year, and installation work for 1 year. Our warranty covers defects in materials and workmanship under normal use conditions."
+		},
+		"maintenanceService": {
+			"question": "Do you provide maintenance services?",
+			"answer": "Yes, we offer ongoing maintenance services to keep your kitchen in perfect condition. This includes hardware adjustments, door alignment, and general maintenance. We also provide cleaning and care instructions for all materials used in your kitchen."
+		},
+		"repairService": {
+			"question": "What if something needs repair?",
+			"answer": "If any issues arise within the warranty period, we'll repair or replace the affected components at no cost to you. For issues outside the warranty period, we provide repair services at competitive rates. We're committed to ensuring your long-term satisfaction with your kitchen."
+		},
+		"supportContact": {
+			"question": "How can I contact support?",
+			"answer": "You can reach our support team by phone, email, or through our website contact form. We provide 24/7 emergency support for urgent issues. For non-emergency matters, we typically respond within 24 hours. Our team is always ready to help with any questions or concerns."
+		},
+		"showroomVisit": {
+			"question": "Can I visit your showroom?",
+			"answer": "Absolutely! We encourage visits to our showroom where you can see our work firsthand, explore material samples, and discuss your project with our design team. We're open Monday through Saturday, and appointments are recommended to ensure you get personalized attention."
+		},
+		"consultationCost": {
+			"question": "Is the initial consultation free?",
+			"answer": "Yes, our initial consultation is completely free with no obligation. This includes discussing your needs, reviewing your space, exploring design options, and providing a preliminary estimate. We believe in earning your business through quality service and transparent communication."
+		},
+		"projectTimeline": {
+			"question": "What is the total project timeline?",
+			"answer": "A typical kitchen project takes 6-8 weeks from initial consultation to completion. This includes 1-2 weeks for design, 3-4 weeks for manufacturing, and 2-3 days for installation. Complex projects may take longer, but we'll provide a detailed timeline during the design phase."
+		},
+		"ecoFriendly": {
+			"question": "Do you offer eco-friendly options?",
+			"answer": "Yes, we're committed to environmental responsibility and offer eco-friendly materials and practices. This includes FSC-certified wood, low-VOC finishes, energy-efficient appliances, and sustainable manufacturing processes. We can help you create a beautiful kitchen that's also environmentally conscious."
+		}
+	},
+	"feedback": {
+		"question": "Was this answer helpful?",
+		"yes": "Yes",
+		"no": "No"
+	},
+	"noResults": {
+		"title": "No questions found",
+		"description": "Try adjusting your search terms or browse different categories.",
+		"reset": "Reset Filters"
+	},
+	"contact": {
+		"title": "Still Have Questions?",
+		"description": "Our team is here to help. Contact us directly for personalized assistance with your kitchen project.",
+		"contactUs": "Contact Us",
+		"calculator": "Get Price Estimate"
+	}
+}
