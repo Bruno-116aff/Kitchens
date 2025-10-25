@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Kitchens Cyprus</title>
   <script>
+    // Store the attempted URL for React Router
     sessionStorage.redirect = location.href;
+
+    // Redirect to the main app
+    window.location.replace('/Kitchens/');
   </script>
-  <meta http-equiv="refresh" content="0;URL='/Kitchens/'">
 </head>
 
-<body></body>
+<body>
+  <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+    <h1>Loading...</h1>
+    <p>Redirecting to the main page...</p>
+  </div>
+</body>
 
 </html>

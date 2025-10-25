@@ -359,11 +359,21 @@ export const images = {
 	},
 } as const;
 
+// Helper function to get correct image path for production
+function getCorrectImagePath(path: string): string {
+	// In production with base path /Kitchens/, ensure images are accessible
+	if (import.meta.env.PROD && path.startsWith('/images/')) {
+		return `/Kitchens${path}`;
+	}
+	return path;
+}
+
 // Helper function to get image with fallback
 export function getImage(imagePath: string, fallback?: string): string {
-	// In production, you might want to check if image exists
-	// For now, return the path as is
-	return imagePath || fallback || images.placeholders.kitchen;
+	const correctPath = getCorrectImagePath(imagePath);
+	return (
+		correctPath || fallback || getCorrectImagePath(images.placeholders.kitchen)
+	);
 }
 
 // Helper function to get placeholder image from external service
@@ -386,7 +396,8 @@ export function getResponsiveImage(
 	basePath: string,
 	sizes: number[] = [320, 640, 1024, 1280]
 ): string {
-	return sizes.map(size => `${basePath}?w=${size} ${size}w`).join(', ');
+	const correctPath = getCorrectImagePath(basePath);
+	return sizes.map(size => `${correctPath}?w=${size} ${size}w`).join(', ');
 }
 
 // Helper function to get WebP image with fallback
@@ -394,10 +405,11 @@ export function getWebPImage(
 	basePath: string,
 	fallback?: string
 ): { webp: string; fallback: string } {
-	const webpPath = basePath.replace(/\.(jpg|jpeg|png)$/, '.webp');
+	const correctPath = getCorrectImagePath(basePath);
+	const webpPath = correctPath.replace(/\.(jpg|jpeg|png)$/, '.webp');
 	return {
 		webp: webpPath,
-		fallback: fallback || basePath,
+		fallback: fallback || correctPath,
 	};
 }
 
