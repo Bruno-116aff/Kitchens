@@ -1,1 +1,0 @@
-import{j as t}from"./index-BMAD2AX4.js";const C=({children:s,className:e="",hover:a=!1,...o})=>{const r=["card",a?"card--hover":"",e].filter(Boolean).join(" ");return t.jsx("div",{className:r,...o,children:s})};export{C};
