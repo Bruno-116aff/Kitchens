@@ -9,6 +9,12 @@
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
+	"overrides": {
+		"react-helmet-async": {
+			"react": "$react",
+			"react-dom": "$react-dom"
+		}
+	},
 	"dependencies": {
 		"@react-three/drei": "^10.7.6",
 		"@react-three/fiber": "^9.4.0",
