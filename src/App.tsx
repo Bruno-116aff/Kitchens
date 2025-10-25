@@ -8,9 +8,8 @@ function App() {
 		const redirect = sessionStorage.redirect;
 		if (redirect) {
 			sessionStorage.removeItem('redirect');
-			// Remove the base path from the URL
-			const path = redirect.replace(window.location.origin + '/Kitchens', '');
-			window.history.replaceState({}, '', path);
+			// Keep the full URL with /Kitchens/ base path
+			window.history.replaceState({}, '', redirect);
 		}
 	}, []);
 

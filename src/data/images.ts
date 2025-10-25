@@ -361,9 +361,12 @@ export const images = {
 
 // Helper function to get correct image path for production
 function getCorrectImagePath(path: string): string {
-	// In production with base path /Kitchens/, ensure images are accessible
-	if (import.meta.env.PROD && path.startsWith('/images/')) {
-		return `/Kitchens${path}`;
+	// In production with base path /Kitchens/, ensure all assets are accessible
+	if (import.meta.env.PROD) {
+		// Handle all public assets (images, logos, favicons, etc.)
+		if (path.startsWith('/') && !path.startsWith('/Kitchens/')) {
+			return `/Kitchens${path}`;
+		}
 	}
 	return path;
 }
