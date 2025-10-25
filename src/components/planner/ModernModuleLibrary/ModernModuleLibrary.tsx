@@ -248,7 +248,7 @@ const ModernModuleLibrary: React.FC<ModernModuleLibraryProps> = ({
 
 		return (
 			<div
-				ref={drag}
+				ref={drag as any}
 				className={`modern-module-library__module ${
 					isDragging ? 'modern-module-library__module--dragging' : ''
 				}`}
@@ -348,5 +348,3 @@ const ModernModuleLibrary: React.FC<ModernModuleLibraryProps> = ({
 };
 
 export default ModernModuleLibrary;
-
-

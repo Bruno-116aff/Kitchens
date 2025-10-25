@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { getProjectBySlug, getRandomProjects } from '../data/portfolio';
 import OptimizedImage from '../components/common/OptimizedImage/OptimizedImage';
-import Button from '../components/common/Button';
+// import Button from '../components/common/Button';
 import Card from '../components/common/Card';
 import Badge from '../components/common/Badge/Badge';
 import './ProjectDetailPage.css';
@@ -70,7 +70,7 @@ const ProjectDetailPage: React.FC = () => {
 						<div className='project-detail__badges'>
 							<Badge variant='info'>{project.category}</Badge>
 							<Badge variant='default'>{project.budget}</Badge>
-							<Badge variant='secondary'>{project.size}</Badge>
+							<Badge variant='default'>{project.size}</Badge>
 						</div>
 					</motion.div>
 				</div>

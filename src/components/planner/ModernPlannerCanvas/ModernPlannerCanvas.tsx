@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
 import type { KitchenModule, PlannerProject } from '../../../types';
 import './ModernPlannerCanvas.css';
@@ -18,14 +18,14 @@ interface DraggedModule {
 
 const ModernPlannerCanvas: React.FC<ModernPlannerCanvasProps> = ({
 	project,
-	onProjectChange,
+	// onProjectChange,
 	onSave,
 	onExport,
 }) => {
 	const [modules, setModules] = useState<KitchenModule[]>([]);
 	const [selectedModule, setSelectedModule] = useState<string | null>(null);
 	const [roomSize, setRoomSize] = useState({ width: 400, height: 300 });
-	const [gridSize, setGridSize] = useState(20);
+	const [gridSize] = useState(20);
 	const [showGrid, setShowGrid] = useState(true);
 	const [zoom, setZoom] = useState(1);
 	const canvasRef = useRef<HTMLDivElement>(null);
@@ -39,49 +39,49 @@ const ModernPlannerCanvas: React.FC<ModernPlannerCanvasProps> = ({
 	}, [project]);
 
 	// Handle drop from module library
-	const handleDrop = useCallback(
-		(item: DraggedModule, monitor: any) => {
-			if (!monitor.didDrop()) return;
+	// const handleDrop = useCallback(
+	// 	(item: DraggedModule, monitor: any) => {
+	// 		if (!monitor.didDrop()) return;
 
-			const dropResult = monitor.getDropResult();
-			if (!dropResult) return;
+	// 		const dropResult = monitor.getDropResult();
+	// 		if (!dropResult) return;
 
-			const { x, y } = dropResult;
+	// 		const { x, y } = dropResult;
 
-			// Snap to grid
-			const snappedX = Math.round(x / gridSize) * gridSize;
-			const snappedY = Math.round(y / gridSize) * gridSize;
+	// 		// Snap to grid
+	// 		const snappedX = Math.round(x / gridSize) * gridSize;
+	// 		const snappedY = Math.round(y / gridSize) * gridSize;
 
-			const newModule: KitchenModule = {
-				id: `module-${Date.now()}`,
-				type: item.moduleType,
-				name:
-					item.moduleType.charAt(0).toUpperCase() + item.moduleType.slice(1),
-				x: snappedX,
-				y: snappedY,
-				width: item.moduleData?.width || 80,
-				height: item.moduleData?.height || 60,
-				rotation: 0,
-			};
+	// 		const newModule: KitchenModule = {
+	// 			id: `module-${Date.now()}`,
+	// 			type: item.moduleType,
+	// 			name:
+	// 				item.moduleType.charAt(0).toUpperCase() + item.moduleType.slice(1),
+	// 			x: snappedX,
+	// 			y: snappedY,
+	// 			width: item.moduleData?.width || 80,
+	// 			height: item.moduleData?.height || 60,
+	// 			rotation: 0,
+	// 		};
 
-			setModules(prev => [...prev, newModule]);
-			setSelectedModule(newModule.id);
+	// 		setModules(prev => [...prev, newModule]);
+	// 		setSelectedModule(newModule.id);
 
-			// Notify parent
-			if (onProjectChange) {
-				const updatedProject: PlannerProject = {
-					id: project?.id || 'new-project',
-					name: project?.name || 'Untitled Project',
-					modules: [...modules, newModule],
-					roomSize,
-					createdAt: project?.createdAt || new Date().toISOString(),
-					updatedAt: new Date().toISOString(),
-				};
-				onProjectChange(updatedProject);
-			}
-		},
-		[modules, roomSize, gridSize, project, onProjectChange]
-	);
+	// 		// Notify parent
+	// 		if (onProjectChange) {
+	// 			const updatedProject: PlannerProject = {
+	// 				id: project?.id || 'new-project',
+	// 				name: project?.name || 'Untitled Project',
+	// 				modules: [...modules, newModule],
+	// 				roomSize,
+	// 				createdAt: project?.createdAt || new Date().toISOString(),
+	// 				updatedAt: new Date().toISOString(),
+	// 			};
+	// 			onProjectChange(updatedProject);
+	// 		}
+	// 	},
+	// 	[modules, roomSize, gridSize, project, onProjectChange]
+	// );
 
 	// Drop target component
 	const DropTarget: React.FC<{ children: React.ReactNode }> = ({
@@ -89,7 +89,7 @@ const ModernPlannerCanvas: React.FC<ModernPlannerCanvasProps> = ({
 	}) => {
 		const [{ isOver }, drop] = useDrop({
 			accept: 'module',
-			drop: (item: DraggedModule, monitor) => {
+			drop: (_item: DraggedModule, monitor) => {
 				const clientOffset = monitor.getClientOffset();
 				if (!clientOffset || !canvasRef.current) return;
 
@@ -106,7 +106,7 @@ const ModernPlannerCanvas: React.FC<ModernPlannerCanvasProps> = ({
 
 		return (
 			<div
-				ref={drop}
+				ref={drop as any}
 				className={`modern-planner-canvas ${
 					isOver ? 'modern-planner-canvas--drag-over' : ''
 				}`}
@@ -120,7 +120,7 @@ const ModernPlannerCanvas: React.FC<ModernPlannerCanvasProps> = ({
 	const ModuleComponent: React.FC<{ module: KitchenModule }> = ({ module }) => {
 		const [{ isDragging }, drag] = useDrag({
 			type: 'existing-module',
-			item: { type: 'existing-module', moduleId: module.id },
+			item: () => ({ type: 'existing-module', moduleId: module.id }),
 			collect: monitor => ({
 				isDragging: monitor.isDragging(),
 			}),
@@ -130,7 +130,7 @@ const ModernPlannerCanvas: React.FC<ModernPlannerCanvasProps> = ({
 
 		return (
 			<div
-				ref={drag}
+				ref={drag as any}
 				className={`modern-planner-module ${
 					isSelected ? 'modern-planner-module--selected' : ''
 				} ${isDragging ? 'modern-planner-module--dragging' : ''}`}

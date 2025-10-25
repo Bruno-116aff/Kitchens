@@ -187,9 +187,9 @@ const AdvancedPlanner: React.FC<AdvancedPlannerProps> = ({
 	}, []);
 
 	// Handle module selection
-	const handleModuleSelect = useCallback((moduleId: string | null) => {
-		setSelectedModule(moduleId);
-	}, []);
+	// const handleModuleSelect = useCallback((moduleId: string | null) => {
+	// 	setSelectedModule(moduleId);
+	// }, []);
 
 	return (
 		<DndProvider backend={HTML5Backend}>

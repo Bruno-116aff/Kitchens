@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { Box, Cylinder, Sphere, Text } from '@react-three/drei';
-import * as THREE from 'three';
+import React from 'react';
+// import { useFrame } from '@react-three/fiber';
+import { Box, Cylinder, Sphere } from '@react-three/drei';
+// import * as THREE from 'three';
 
 // Base Cabinet 3D Model
 export const BaseCabinet3D: React.FC<{
@@ -19,7 +19,7 @@ export const BaseCabinet3D: React.FC<{
 	position = [0, 0, 0],
 	rotation = [0, 0, 0],
 }) => {
-	const meshRef = useRef<THREE.Mesh>(null);
+	// const meshRef = useRef<THREE.Mesh>(null);
 
 	// Get material color based on type
 	const getMaterialColor = () => {
@@ -169,7 +169,7 @@ export const CounterTop3D: React.FC<{
 	rotation?: [number, number, number];
 }> = ({
 	width,
-	height,
+	// height,
 	depth,
 	material = 'granite',
 	position = [0, 0, 0],
@@ -367,8 +367,8 @@ export const Sink3D: React.FC<{
 	rotation?: [number, number, number];
 }> = ({
 	width,
-	height,
-	depth,
+	// height,
+	// depth,
 	type = 'single',
 	position = [0, 0, 0],
 	rotation = [0, 0, 0],
@@ -517,4 +517,3 @@ export const KitchenIsland3D: React.FC<{
 		</group>
 	);
 };
-

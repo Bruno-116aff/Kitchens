@@ -6,13 +6,14 @@ import {
 	ContactShadows,
 	Grid,
 	Text,
+	Box,
 } from '@react-three/drei';
-import { useDrag } from 'react-dnd';
+// import { useDrag } from 'react-dnd';
 import * as THREE from 'three';
 import type { KitchenModule, PlannerProject } from '../../../types';
 import {
 	BaseCabinet3D,
-	WallCabinet3D,
+	// WallCabinet3D,
 	CounterTop3D,
 	Refrigerator3D,
 	Dishwasher3D,
@@ -29,30 +30,30 @@ interface Planner3DProps {
 	onExport?: (project: PlannerProject) => void;
 }
 
-interface DraggedModule {
-	type: 'module';
-	moduleType: KitchenModule['type'];
-	moduleData: Partial<KitchenModule>;
-}
+// interface DraggedModule {
+// 	type: 'module';
+// 	moduleType: KitchenModule['type'];
+// 	moduleData: Partial<KitchenModule>;
+// }
 
 // 3D Kitchen Module Component
 const KitchenModule3D: React.FC<{
 	module: KitchenModule;
 	isSelected: boolean;
 	onSelect: (id: string) => void;
-	onUpdate: (id: string, updates: Partial<KitchenModule>) => void;
-}> = ({ module, isSelected, onSelect, onUpdate }) => {
+	// onUpdate: (id: string, updates: Partial<KitchenModule>) => void;
+}> = ({ module, isSelected, onSelect }) => {
 	const meshRef = useRef<THREE.Mesh>(null);
 	const [hovered, setHovered] = useState(false);
 
 	// Handle drag in 3D space
-	const [{ isDragging }, drag] = useDrag({
-		type: 'existing-module',
-		item: { type: 'existing-module', moduleId: module.id },
-		collect: monitor => ({
-			isDragging: monitor.isDragging(),
-		}),
-	});
+	// const [{ isDragging }, drag] = useDrag({
+	// 	type: 'existing-module',
+	// 	item: { type: 'existing-module', moduleId: module.id },
+	// 	collect: monitor => ({
+	// 		isDragging: monitor.isDragging(),
+	// 	}),
+	// });
 
 	// Animation for hover and selection
 	useFrame(state => {
@@ -183,7 +184,7 @@ const KitchenModule3D: React.FC<{
 
 	return (
 		<group
-			ref={drag}
+			// ref={drag}
 			position={[module.x / 100, 0, module.y / 100]}
 			onClick={e => {
 				e.stopPropagation();
@@ -271,13 +272,13 @@ const Scene3D: React.FC<{
 	roomSize: { width: number; height: number };
 	selectedModule: string | null;
 	onModuleSelect: (id: string) => void;
-	onModuleUpdate: (id: string, updates: Partial<KitchenModule>) => void;
+	// onModuleUpdate: (id: string, updates: Partial<KitchenModule>) => void;
 }> = ({
 	modules,
 	roomSize,
 	selectedModule,
 	onModuleSelect,
-	onModuleUpdate,
+	// onModuleUpdate,
 }) => {
 	const { camera } = useThree();
 
@@ -334,7 +335,7 @@ const Scene3D: React.FC<{
 					module={module}
 					isSelected={selectedModule === module.id}
 					onSelect={onModuleSelect}
-					onUpdate={onModuleUpdate}
+					// onUpdate={onModuleUpdate}
 				/>
 			))}
 
@@ -355,14 +356,14 @@ const Scene3D: React.FC<{
 // Main 3D Planner Component
 const Planner3D: React.FC<Planner3DProps> = ({
 	project,
-	onProjectChange,
+	// onProjectChange,
 	onSave,
 	onExport,
 }) => {
 	const [modules, setModules] = useState<KitchenModule[]>([]);
 	const [selectedModule, setSelectedModule] = useState<string | null>(null);
 	const [roomSize, setRoomSize] = useState({ width: 400, height: 300 });
-	const [viewMode, setViewMode] = useState<'2d' | '3d'>('3d');
+	// const [viewMode, setViewMode] = useState<'2d' | '3d'>('3d');
 	const [cameraPosition, setCameraPosition] = useState<
 		'top' | 'front' | 'side' | 'free'
 	>('free');
@@ -381,16 +382,16 @@ const Planner3D: React.FC<Planner3DProps> = ({
 	}, []);
 
 	// Handle module updates
-	const handleModuleUpdate = useCallback(
-		(id: string, updates: Partial<KitchenModule>) => {
-			setModules(prev =>
-				prev.map(module =>
-					module.id === id ? { ...module, ...updates } : module
-				)
-			);
-		},
-		[]
-	);
+	// const handleModuleUpdate = useCallback(
+	// 	(id: string, updates: Partial<KitchenModule>) => {
+	// 		setModules(prev =>
+	// 			prev.map(module =>
+	// 				module.id === id ? { ...module, ...updates } : module
+	// 			)
+	// 		);
+	// 	},
+	// 	[]
+	// );
 
 	// Handle camera position changes
 	const handleCameraPosition = useCallback(
@@ -505,7 +506,7 @@ const Planner3D: React.FC<Planner3DProps> = ({
 							roomSize={roomSize}
 							selectedModule={selectedModule}
 							onModuleSelect={handleModuleSelect}
-							onModuleUpdate={handleModuleUpdate}
+							// onModuleUpdate={handleModuleUpdate}
 						/>
 						<OrbitControls
 							enablePan={true}
