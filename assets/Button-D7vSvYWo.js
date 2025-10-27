@@ -1,1 +1,0 @@
-import{j as d}from"./index-CMPOtVqq.js";const j=({variant:t="primary",size:a="md",children:n,onClick:e,type:o="button",disabled:s=!1,className:l="",...r})=>{const b="btn",i=`btn--${t}`,c=`btn--${a}`,m=[b,i,c,s?"btn--disabled":"",l].filter(Boolean).join(" ");return d.jsx("button",{type:o,className:m,onClick:e,disabled:s,...r,children:n})};export{j as B};
