@@ -27,7 +27,7 @@ const ProjectDetailPage = React.lazy(
 
 export const router = createBrowserRouter([
 	{
-		path: '/',
+		path: '/Kitchens/',
 		element: (
 			<PageLayout
 				seo={{
@@ -45,7 +45,7 @@ export const router = createBrowserRouter([
 		errorElement: <NotFoundPage />,
 	},
 	{
-		path: '/services',
+		path: '/Kitchens/services',
 		element: (
 			<PageLayout
 				seo={{
@@ -62,7 +62,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/about',
+		path: '/Kitchens/about',
 		element: (
 			<PageLayout
 				seo={{
@@ -79,7 +79,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/portfolio',
+		path: '/Kitchens/portfolio',
 		element: (
 			<PageLayout
 				seo={{
@@ -96,7 +96,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/portfolio/:slug',
+		path: '/Kitchens/portfolio/:slug',
 		element: (
 			<PageLayout
 				seo={{
@@ -112,7 +112,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/process',
+		path: '/Kitchens/process',
 		element: (
 			<PageLayout
 				seo={{
@@ -129,7 +129,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/faq',
+		path: '/Kitchens/faq',
 		element: (
 			<PageLayout
 				seo={{
@@ -146,7 +146,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/contact',
+		path: '/Kitchens/contact',
 		element: (
 			<PageLayout
 				seo={{
@@ -163,7 +163,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/privacy-policy',
+		path: '/Kitchens/privacy-policy',
 		element: (
 			<PageLayout
 				seo={{
@@ -180,7 +180,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/terms-of-service',
+		path: '/Kitchens/terms-of-service',
 		element: (
 			<PageLayout
 				seo={{
@@ -197,7 +197,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/thank-you',
+		path: '/Kitchens/thank-you',
 		element: (
 			<PageLayout
 				seo={{
@@ -215,7 +215,7 @@ export const router = createBrowserRouter([
 	},
 	// New advanced pages
 	{
-		path: '/calculator',
+		path: '/Kitchens/calculator',
 		element: (
 			<PageLayout
 				seo={{
@@ -232,7 +232,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/planner',
+		path: '/Kitchens/planner',
 		element: (
 			<PageLayout
 				seo={{
@@ -249,7 +249,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/book',
+		path: '/Kitchens/book',
 		element: (
 			<PageLayout
 				seo={{
@@ -266,7 +266,7 @@ export const router = createBrowserRouter([
 		),
 	},
 	{
-		path: '/financing',
+		path: '/Kitchens/financing',
 		element: (
 			<PageLayout
 				seo={{
