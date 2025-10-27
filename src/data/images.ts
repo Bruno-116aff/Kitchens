@@ -3,8 +3,8 @@
 
 export const images = {
 	// Logo and branding
-	logo: '/logo.jpg',
-	favicon: '/favicon.svg',
+	logo: '/Kitchens/logo.jpg',
+	favicon: '/Kitchens/favicon.svg',
 
 	// Hero section
 	hero: {
