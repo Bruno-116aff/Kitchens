@@ -192,7 +192,7 @@ class APIService {
 				budget: '€10-20k',
 				material: 'MDF',
 				appliances: 'premium',
-				images: ['/images/portfolio/project-1/1.jpg'],
+				images: ['/Kitchens/images/portfolio/project-1/1.jpg'],
 				slug: 'modern-linear-kitchen',
 			},
 			{
@@ -203,7 +203,7 @@ class APIService {
 				budget: '€20-30k',
 				material: 'solid-wood',
 				appliances: 'premium',
-				images: ['/images/portfolio/project-3/1.jpg'],
+				images: ['/Kitchens/images/portfolio/project-3/1.jpg'],
 				slug: 'classic-l-shaped-kitchen',
 			},
 			{
@@ -214,7 +214,7 @@ class APIService {
 				budget: '€15-25k',
 				material: 'MDF',
 				appliances: 'standard',
-				images: ['/images/portfolio/project-8/1.jpg'],
+				images: ['/Kitchens/images/portfolio/project-8/1.jpg'],
 				slug: 'scandinavian-u-shaped-kitchen',
 			},
 		];
@@ -268,13 +268,13 @@ class APIService {
 			appliances: 'Premium appliance package',
 			timeline: '4-6 weeks',
 			images: [
-				'/images/portfolio/project-1/1.jpg',
-				'/images/portfolio/project-1/2.jpg',
-				'/images/portfolio/project-1/3.jpg',
+				'/Kitchens/images/portfolio/project-1/1.jpg',
+				'/Kitchens/images/portfolio/project-1/2.jpg',
+				'/Kitchens/images/portfolio/project-1/3.jpg',
 			],
 			beforeAfter: {
-				before: '/images/portfolio/project-2/1.jpg',
-				after: '/images/portfolio/project-2/2.jpg',
+				before: '/Kitchens/images/portfolio/project-2/1.jpg',
+				after: '/Kitchens/images/portfolio/project-2/2.jpg',
 			},
 			testimonial: {
 				text: 'Absolutely love our new kitchen! The team was professional and delivered exactly what we wanted.',
@@ -369,21 +369,21 @@ class APIService {
 				name: 'Economy Package',
 				price: priceRange.min,
 				description: 'Essential features with quality materials',
-				image: '/images/presets/economy.jpg',
+				image: '/Kitchens/images/presets/economy.jpg',
 			},
 			{
 				id: 'optimal',
 				name: 'Optimal Package',
 				price: priceRange.min + range * 0.4,
 				description: 'Best value with premium touches',
-				image: '/images/presets/optimal.jpg',
+				image: '/Kitchens/images/presets/optimal.jpg',
 			},
 			{
 				id: 'premium',
 				name: 'Premium Package',
 				price: priceRange.max,
 				description: 'Luxury finishes and premium appliances',
-				image: '/images/presets/premium.jpg',
+				image: '/Kitchens/images/presets/premium.jpg',
 			},
 		];
 	}
