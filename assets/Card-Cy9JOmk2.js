@@ -1,0 +1,1 @@
+import{j as t}from"./index-kVCMSIPH.js";const C=({children:s,className:e="",hover:a=!1,...o})=>{const r=["card",a?"card--hover":"",e].filter(Boolean).join(" ");return t.jsx("div",{className:r,...o,children:s})};export{C};
