@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
+import { images } from '../../data/images';
 
 const Footer: React.FC = () => {
 	const { t } = useTranslation('common');
@@ -49,7 +50,7 @@ const Footer: React.FC = () => {
 						<div className='footer__brand'>
 							<Link to='/Kitchens/' className='footer__logo'>
 								<img
-									src='/Kitchens/logo.svg'
+									src={images.logo}
 									alt='Custom Kitchens'
 									className='footer__logo-img'
 								/>
