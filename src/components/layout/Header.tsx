@@ -22,18 +22,18 @@ const Header: React.FC = () => {
 	}, []);
 
 	const navigationItems = [
-		{ label: t('navigation.home'), href: '/' },
-		{ label: t('navigation.services'), href: '/services' },
-		{ label: t('navigation.about'), href: '/about' },
-		{ label: t('navigation.portfolio'), href: '/portfolio' },
-		{ label: t('navigation.process'), href: '/process' },
-		{ label: t('navigation.faq'), href: '/faq' },
-		{ label: t('navigation.contact'), href: '/contact' },
+		{ label: t('navigation.home'), href: '/Kitchens/' },
+		{ label: t('navigation.services'), href: '/Kitchens/services' },
+		{ label: t('navigation.about'), href: '/Kitchens/about' },
+		{ label: t('navigation.portfolio'), href: '/Kitchens/portfolio' },
+		{ label: t('navigation.process'), href: '/Kitchens/process' },
+		{ label: t('navigation.faq'), href: '/Kitchens/faq' },
+		{ label: t('navigation.contact'), href: '/Kitchens/contact' },
 	];
 
 	const quickActions = [
-		{ label: 'Calculator', href: '/calculator' },
-		{ label: '3D Planner', href: '/planner' },
+		{ label: 'Calculator', href: '/Kitchens/calculator' },
+		{ label: '3D Planner', href: '/Kitchens/planner' },
 	];
 
 	const toggleMobileMenu = () => {
@@ -49,7 +49,11 @@ const Header: React.FC = () => {
 			<div className='container'>
 				<div className='header__content'>
 					{/* Logo */}
-					<Link to='/' className='header__logo' onClick={closeMobileMenu}>
+					<Link
+						to='/Kitchens/'
+						className='header__logo'
+						onClick={closeMobileMenu}
+					>
 						<img
 							src={images.logo}
 							alt='Custom Kitchens'
@@ -82,7 +86,7 @@ const Header: React.FC = () => {
 					<div className='header__actions'>
 						<div className='header__cta'>
 							<Link
-								to='/contact'
+								to='/Kitchens/contact'
 								className='btn btn--primary btn--sm header__cta-button'
 							>
 								{t('buttons.getQuote')}
@@ -163,7 +167,7 @@ const Header: React.FC = () => {
 						</li>
 						<li className='header__mobile-nav-item'>
 							<Link
-								to='/contact'
+								to='/Kitchens/contact'
 								className='btn btn--primary btn--md header__mobile-cta'
 								onClick={closeMobileMenu}
 							>

@@ -9,22 +9,22 @@ const Footer: React.FC = () => {
 
 	const footerLinks = {
 		company: [
-			{ label: t('navigation.about'), href: '/about' },
-			{ label: t('navigation.services'), href: '/services' },
-			{ label: t('navigation.portfolio'), href: '/portfolio' },
-			{ label: t('navigation.process'), href: '/process' },
+			{ label: t('navigation.about'), href: '/Kitchens/about' },
+			{ label: t('navigation.services'), href: '/Kitchens/services' },
+			{ label: t('navigation.portfolio'), href: '/Kitchens/portfolio' },
+			{ label: t('navigation.process'), href: '/Kitchens/process' },
 		],
 		tools: [
-			{ label: 'Price Calculator', href: '/calculator' },
-			{ label: '3D Planner', href: '/planner' },
-			{ label: 'Book Consultation', href: '/book' },
-			{ label: 'Financing Options', href: '/financing' },
+			{ label: 'Price Calculator', href: '/Kitchens/calculator' },
+			{ label: '3D Planner', href: '/Kitchens/planner' },
+			{ label: 'Book Consultation', href: '/Kitchens/book' },
+			{ label: 'Financing Options', href: '/Kitchens/financing' },
 		],
 		support: [
-			{ label: t('navigation.faq'), href: '/faq' },
-			{ label: t('navigation.contact'), href: '/contact' },
-			{ label: 'Privacy Policy', href: '/privacy-policy' },
-			{ label: 'Terms of Service', href: '/terms' },
+			{ label: t('navigation.faq'), href: '/Kitchens/faq' },
+			{ label: t('navigation.contact'), href: '/Kitchens/contact' },
+			{ label: 'Privacy Policy', href: '/Kitchens/privacy-policy' },
+			{ label: 'Terms of Service', href: '/Kitchens/terms' },
 		],
 		contact: {
 			phone: '+357 99 123 456',
@@ -47,9 +47,9 @@ const Footer: React.FC = () => {
 					{/* Company Info */}
 					<div className='footer__section'>
 						<div className='footer__brand'>
-							<Link to='/' className='footer__logo'>
+							<Link to='/Kitchens/' className='footer__logo'>
 								<img
-									src='/logo.svg'
+									src='/Kitchens/logo.svg'
 									alt='Custom Kitchens'
 									className='footer__logo-img'
 								/>
@@ -247,10 +247,13 @@ const Footer: React.FC = () => {
 							© {currentYear} Custom Kitchens. All rights reserved.
 						</p>
 						<div className='footer__legal'>
-							<Link to='/privacy-policy' className='footer__legal-link'>
+							<Link
+								to='/Kitchens/privacy-policy'
+								className='footer__legal-link'
+							>
 								Privacy Policy
 							</Link>
-							<Link to='/terms' className='footer__legal-link'>
+							<Link to='/Kitchens/terms' className='footer__legal-link'>
 								Terms of Service
 							</Link>
 						</div>
