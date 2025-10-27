@@ -92,7 +92,7 @@ export const kitchenTypes: KitchenType[] = [
 			'DIY assembly possible',
 			'Limited customization',
 		],
-		image: '/images/portfolio/project-1/1.jpg',
+		image: '/Kitchens/images/portfolio/project-1/1.jpg',
 	},
 	{
 		id: 'custom',
@@ -106,7 +106,7 @@ export const kitchenTypes: KitchenType[] = [
 			'5-year warranty',
 			'Design consultation included',
 		],
-		image: '/images/portfolio/project-3/1.jpg',
+		image: '/Kitchens/images/portfolio/project-3/1.jpg',
 		popular: true,
 	},
 	{
@@ -122,7 +122,7 @@ export const kitchenTypes: KitchenType[] = [
 			'Project management',
 			'White-glove service',
 		],
-		image: '/images/portfolio/project-8/1.jpg',
+		image: '/Kitchens/images/portfolio/project-8/1.jpg',
 	},
 	{
 		id: 'individual',
@@ -136,6 +136,6 @@ export const kitchenTypes: KitchenType[] = [
 			'10-year warranty',
 			'Personal project manager',
 		],
-		image: '/images/portfolio/project-10/1.jpg',
+		image: '/Kitchens/images/portfolio/project-10/1.jpg',
 	},
 ];
