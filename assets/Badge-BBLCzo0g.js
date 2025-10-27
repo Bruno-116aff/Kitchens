@@ -1,1 +1,0 @@
-import{j as d}from"./index-SQXLVZY4.js";const r=({children:a,variant:e="default",size:s="md",className:o=""})=>{const t=["badge",`badge--${e}`,`badge--${s}`,o].filter(Boolean).join(" ");return d.jsx("span",{className:t,children:a})};export{r as B};
